@@ -18,7 +18,7 @@ enum HomeSection: String, CaseIterable, Identifiable {
         case .legends: return "Legends of Glory"
         case .mvp2012: return "Mvp2012"
         case .campaign4knm: return "4knm Campaign"
-        case .laFilmMode: return "Lafilmmode"
+        case .laFilmMode: return "Movies"
         case .community: return "RMC13 Community"
         }
     }
@@ -216,23 +216,42 @@ struct FourKNMCampaignView: View {
 
 struct LAFilmModeView: View {
     var body: some View {
-        SectionPageChrome(title: "Lafilmmode", kicker: "Picture Desk", imageName: "generated-image-1-41", systemImage: "film.fill") {
-            Text("Lafilmmode covers RMC13 film sets, lookbooks, and Los Angeles production notes. Use it for camera setups, location lists, and premiere timing.")
-                .font(.body)
-                .foregroundColor(RMCTheme.muted)
+        ScrollView {
+            VStack(alignment: .leading, spacing: 18) {
+                MovieShotCarousel()
 
-            topicBlock(title: "On set", items: [
-                "Night exterior lighting package",
-                "Interview framing for reel cuts",
-                "Color notes for RMC13PRoductions"
-            ])
+                Text("FULL LIST")
+                    .font(.subheadline)
+                    .bold()
+                    .tracking(2)
+                    .foregroundColor(RMCTheme.gold)
 
-            topicBlock(title: "Now shooting", items: [
-                "Music video companion for current singles",
-                "Documentary shorts around community events",
-                "Casting calls posted in RMC13 Community"
-            ])
+                Text("Movies")
+                    .font(.largeTitle)
+                    .fontWeight(.light)
+                    .foregroundColor(RMCTheme.ivory)
+
+                Text("Lafilmmode covers RMC13 film sets, lookbooks, and Los Angeles production notes. Use it for camera setups, location lists, and premiere timing.")
+                    .font(.body)
+                    .foregroundColor(RMCTheme.muted)
+
+                topicBlock(title: "On set", items: [
+                    "Night exterior lighting package",
+                    "Interview framing for reel cuts",
+                    "Color notes for RMC13PRoductions"
+                ])
+
+                topicBlock(title: "Now shooting", items: [
+                    "Music video companion for current singles",
+                    "Documentary shorts around community events",
+                    "Casting calls posted in RMC13 Community"
+                ])
+            }
+            .padding()
         }
+        .navigationTitle("Movies")
+        .navigationBarTitleDisplayMode(.inline)
+        .rmcScreen()
     }
 }
 
@@ -283,4 +302,61 @@ private func topicBlock(title: String, items: [String]) -> some View {
 
 private func labelButton(_ title: String) -> some View {
     GoldCTAButton(title: title)
+}
+
+/// One-at-a-time hero on the movies list. Advances on its own.
+struct MovieShotCarousel: View {
+    private let shots: [(name: String, image: String)] = [
+        ("Neecole", "Neecole_Main_shot"),
+        ("Moe", "Moe_GM_Shot"),
+        ("Glory", "Glory_movie_shot")
+    ]
+
+    @State private var index = 0
+
+    var body: some View {
+        Color.clear
+            .aspectRatio(1.22, contentMode: .fit)
+            .overlay {
+                TabView(selection: $index) {
+                    ForEach(shots.indices, id: \.self) { shotIndex in
+                        movieCard(shots[shotIndex])
+                            .tag(shotIndex)
+                    }
+                }
+                .tabViewStyle(.page(indexDisplayMode: .automatic))
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .goldTrim()
+            .accessibilityLabel("Movie shots")
+        .task {
+            while !Task.isCancelled {
+                try? await Task.sleep(for: .seconds(4))
+                guard !Task.isCancelled else { return }
+                withAnimation(.easeInOut(duration: 0.45)) {
+                    index = (index + 1) % shots.count
+                }
+            }
+        }
+    }
+
+    private func movieCard(_ shot: (name: String, image: String)) -> some View {
+        Color.black
+            .overlay {
+                Image(shot.image)
+                    .resizable()
+                    .scaledToFill()
+            }
+            .clipped()
+            .overlay(alignment: .bottomLeading) {
+                Text(shot.name)
+                    .font(.headline)
+                    .foregroundStyle(RMCTheme.ivory)
+                    .padding(.horizontal, 12)
+                    .padding(.vertical, 6)
+                    .background(Color.black.opacity(0.55), in: Capsule())
+                    .padding(12)
+            }
+            .accessibilityLabel(shot.name)
+    }
 }
