@@ -2,10 +2,20 @@ import SwiftUI
 
 struct NewsArticlesView: View {
     @ObservedObject private var library = FeedLibrary.shared
+    @ObservedObject private var videos = VideoLibrary.shared
 
     var body: some View {
         NavigationStack {
             List {
+                if !videos.clips(in: .articles).isEmpty {
+                    Section {
+                        SharedVideoLaneView(lane: .articles)
+                            .padding(.vertical, 8)
+                    }
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+                }
+
                 if library.post("article-featured") != nil {
                     Section {
                         FeedPhotoFrame(postKey: "article-featured")

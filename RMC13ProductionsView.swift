@@ -11,6 +11,8 @@ struct RMC13ProductionsView: View {
 
                     FeedPhotoFrame(postKey: "section-productions")
 
+                    SharedVideoLaneView(lane: .rmc13)
+
                     Text("RMC13 Productions builds original music, film, game, and live entertainment drops that travel across the RMC13 network. This hub is the front door for reels, premieres, and studio news.")
                         .font(.body)
                         .foregroundColor(RMCTheme.muted)

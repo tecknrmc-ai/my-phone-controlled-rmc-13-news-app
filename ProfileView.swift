@@ -50,6 +50,10 @@ struct ProfileView: View {
                 .padding()
                 .goldCard()
 
+                ProfileMediaSections()
+                    .padding()
+                    .goldCard()
+
                 VStack(alignment: .leading, spacing: 12) {
                     Text("Account")
                         .font(.headline)

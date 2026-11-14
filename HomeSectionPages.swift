@@ -126,6 +126,8 @@ struct BattlezonePageView: View {
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
 
+            SharedVideoLaneView(lane: .battlezone)
+
             FlashyCarouselView(
                 title: "Battle Zone Gallery",
                 items: CarouselItem.battleZonePhotos,
@@ -154,6 +156,8 @@ struct LegendsOfGloryPageView: View {
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
 
+            SharedVideoLaneView(lane: .legends)
+
             topicBlock(title: "Expansion beat", items: [
                 "Glory battle artist join RMC13 for a huge battle",
                 "Unique rewards dropping this rotation",
@@ -181,6 +185,8 @@ struct MVP2012PageView: View {
             Text("MVP 2012 is the Arroyo Valley player, coach, fan, and gamer hub. Claim a character package, follow standings, and send your profile in for review.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
+
+            SharedVideoLaneView(lane: .mvp)
 
             topicBlock(title: "Hub actions", items: [
                 "Build a player or coach profile",
@@ -223,6 +229,8 @@ struct LAFilmModeView: View {
             VStack(alignment: .leading, spacing: 18) {
                 MovieShotCarousel()
 
+                SharedVideoLaneView(lane: .movies)
+
                 PosterTitle(text: "FULL LIST", size: 16, color: RMCTheme.gold)
 
                 PosterTitle(text: "Movies", size: 40)
@@ -257,6 +265,8 @@ struct RMC13CommunityView: View {
             Text("The RMC13 Community page is the meeting point for fans, players, filmmakers, and music crews. Share updates, find collaborators, and follow house rules.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
+
+            SharedVideoLaneView(lane: .community)
 
             topicBlock(title: "Community lanes", items: [
                 "Players and coaches from MVP 2012",

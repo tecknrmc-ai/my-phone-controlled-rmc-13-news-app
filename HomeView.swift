@@ -343,6 +343,9 @@ struct HomeView: View {
                     RMCBrandTitle(size: 48)
                         .padding(.top, 6)
 
+                    SharedVideoLaneView(lane: .mainFeed)
+                        .padding(.horizontal)
+
                     // MARK: - Main story carousel
                     FlashyCarouselView(
                         title: nil,
