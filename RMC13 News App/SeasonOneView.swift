@@ -29,6 +29,7 @@ struct SeasonOneView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 0) {
+                SeasonMiniMenu()
                 gloryPoster
                 videoTrailerSection
                     .padding(.horizontal, 16)
@@ -69,6 +70,152 @@ struct SeasonOneView: View {
                 .foregroundStyle(RMCTheme.muted)
                 .fixedSize(horizontal: false, vertical: true)
         }
+    }
+}
+
+private struct SeasonMenuGroup: Identifiable {
+    let title: String
+    let pages: [String]
+    var id: String { title }
+}
+
+/// Compact dropdown page list across the top of the Season 1 page.
+private struct SeasonMiniMenu: View {
+    @State private var openTitle: String?
+
+    private let groups: [SeasonMenuGroup] = [
+        SeasonMenuGroup(title: "Brands", pages: [
+            "RMC13",
+            "RMCVFX",
+            "CNTAUDIO",
+            "T.A.M. ENT.",
+            "T.Y.L.Films",
+            "IAMNICOLEKNOX",
+            "MBRACEMODELING",
+            "AND MORE"
+        ]),
+        SeasonMenuGroup(title: "Producers", pages: [
+            "Teckn",
+            "Nee'Cole",
+            "CashChamp",
+            "IAMNICOLEKNOX",
+            "Nef"
+        ]),
+        SeasonMenuGroup(title: "Artist", pages: [
+            "Bizzybaggz",
+            "Hottunez",
+            "Nef",
+            "KxngD.O.P.E.",
+            "Gotti"
+        ]),
+        SeasonMenuGroup(title: "Production", pages: [
+            "RMC13PRoductions",
+            "RMCVFX"
+        ]),
+        SeasonMenuGroup(title: "Locations", pages: [
+            "San Bernardino",
+            "Los Angeles",
+            "Hollywood"
+        ]),
+        SeasonMenuGroup(title: "Grand Prize", pages: [
+            "50k App marketing campaign",
+            "5k Prize",
+            "# piece clothing merch set",
+            "Season 1 winner documentary"
+        ])
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 0) {
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 8) {
+                    ForEach(groups) { group in
+                        let isOpen = openTitle == group.title
+                        Button {
+                            withAnimation(.easeInOut(duration: 0.2)) {
+                                openTitle = isOpen ? nil : group.title
+                            }
+                        } label: {
+                            HStack(spacing: 4) {
+                                Text(group.title)
+                                    .lineLimit(1)
+                                Image(systemName: isOpen ? "chevron.up" : "chevron.down")
+                                    .font(.system(size: 9, weight: .bold))
+                            }
+                            .font(.custom("DINCondensed-Bold", size: 15))
+                            .foregroundStyle(isOpen ? Color.black : RMCTheme.gold)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 7)
+                            .background(Capsule().fill(isOpen ? RMCTheme.gold : Color.black))
+                            .overlay(Capsule().stroke(RMCTheme.gold, lineWidth: 1))
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("\(group.title) menu")
+                    }
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 8)
+            }
+            .background(Color.black)
+
+            if let group = groups.first(where: { $0.title == openTitle }) {
+                VStack(alignment: .leading, spacing: 0) {
+                    ForEach(group.pages, id: \.self) { page in
+                        NavigationLink {
+                            SeasonMenuPage(section: group.title, name: page)
+                        } label: {
+                            HStack(spacing: 8) {
+                                Text(page)
+                                    .font(.custom("DINCondensed-Bold", size: 18))
+                                    .foregroundStyle(RMCTheme.ivory)
+                                    .lineLimit(2)
+                                    .minimumScaleFactor(0.7)
+                                    .frame(maxWidth: .infinity, alignment: .leading)
+                                Image(systemName: "chevron.right")
+                                    .font(.system(size: 12, weight: .bold))
+                                    .foregroundStyle(RMCTheme.gold)
+                            }
+                            .padding(.horizontal, 16)
+                            .padding(.vertical, 12)
+                            .contentShape(Rectangle())
+                        }
+                        .buttonStyle(.plain)
+                        .accessibilityLabel("\(group.title), \(page)")
+                        Rectangle()
+                            .fill(RMCTheme.gold.opacity(0.28))
+                            .frame(height: 0.5)
+                    }
+                }
+                .background(RMCTheme.obsidianSoft)
+            }
+        }
+        .overlay(alignment: .bottom) {
+            Rectangle()
+                .fill(RMCTheme.gold)
+                .frame(height: 1)
+        }
+    }
+}
+
+private struct SeasonMenuPage: View {
+    let section: String
+    let name: String
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 14) {
+                PosterTitle(text: section, size: 16, color: RMCTheme.gold)
+                PosterTitle(text: name, size: 36)
+                Text("Season 1 \(section) page.")
+                    .font(.body)
+                    .foregroundStyle(RMCTheme.muted)
+            }
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .navigationTitle(name)
+        .navigationBarTitleDisplayMode(.inline)
+        .rmcScreen()
     }
 }
 
