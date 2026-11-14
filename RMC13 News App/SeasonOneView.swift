@@ -35,6 +35,9 @@ struct SeasonOneView: View {
                 videoTrailerSection
                     .padding(.horizontal, 16)
                     .padding(.top, 20)
+                GloryBattleArtists()
+                    .padding(.horizontal, 16)
+                    .padding(.top, 24)
                     .padding(.bottom, 32)
             }
         }
@@ -63,10 +66,7 @@ struct SeasonOneView: View {
 
     private var videoTrailerSection: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("VIDEO TRAILER")
-                .font(.system(size: 12, weight: .bold))
-                .tracking(2.2)
-                .foregroundStyle(RMCTheme.gold)
+            PosterTitle(text: "VIDEO TRAILER", size: 18, color: RMCTheme.gold)
 
             Button {
                 showTrailer = true
@@ -95,10 +95,7 @@ struct SeasonOneView: View {
             .buttonStyle(.plain)
             .accessibilityLabel("Play Season 1 video trailer")
 
-            Text("Legends of Glory")
-                .font(.title3)
-                .fontWeight(.light)
-                .foregroundStyle(RMCTheme.ivory)
+            PosterTitle(text: "Legends of Glory", size: 32)
 
             Text("Season 1 trailer for the Legends of Glory card.")
                 .font(.subheadline)
@@ -150,6 +147,45 @@ private struct SeasonTrailerStage: View {
                     .accessibilityLabel("Close trailer")
                 }
                 Spacer()
+            }
+        }
+    }
+}
+
+/// Season 1 battle artists. These five shots are the only photos in this section.
+struct GloryBattleArtists: View {
+    private let artists: [(name: String, image: String)] = [
+        ("Bizzybaggz", "Bizzybaggz_Glory_Artist"),
+        ("Tunez", "Tunez_Glory_Artist"),
+        ("Nef", "Nef_Glory_Artist"),
+        ("Gotti", "Gotti_Glory_Artist"),
+        ("KD", "KD_Glory_Artist")
+    ]
+
+    var body: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            PosterTitle(text: "BATTLE ARTISTS", size: 22, color: RMCTheme.gold)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 12) {
+                    ForEach(artists, id: \.image) { artist in
+                        VStack(alignment: .leading, spacing: 6) {
+                            Image(artist.image)
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 148, height: 196)
+                                .clipped()
+                                .goldTrim(cornerRadius: 12)
+                            Text(artist.name)
+                                .font(.custom("DINCondensed-Bold", size: 18))
+                                .lineLimit(1)
+                                .minimumScaleFactor(0.6)
+                                .foregroundStyle(RMCTheme.ivory)
+                                .frame(width: 148, alignment: .leading)
+                        }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityLabel(artist.name)
+                    }
+                }
             }
         }
     }

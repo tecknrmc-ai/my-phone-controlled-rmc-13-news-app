@@ -58,6 +58,54 @@ enum RMCTheme {
     }
 }
 
+/// Condensed poster type that shrinks to the photo or video frame.
+struct PosterTitle: View {
+    let text: String
+    var size: CGFloat = 28
+    var color: Color = RMCTheme.ivory
+    var alignment: Alignment = .leading
+
+    var body: some View {
+        Text(text)
+            .font(.custom("DINCondensed-Bold", size: size))
+            .lineLimit(2)
+            .minimumScaleFactor(0.5)
+            .foregroundStyle(color)
+            .frame(maxWidth: .infinity, alignment: alignment)
+    }
+}
+
+/// Black disc with a black-and-gold ring for the app profile.
+struct ProfileGoldRing: View {
+    var systemImage: String
+    var diameter: CGFloat = 84
+
+    var body: some View {
+        Image(systemName: systemImage)
+            .font(.system(size: diameter * 0.42, weight: .regular))
+            .foregroundStyle(RMCTheme.gold)
+            .frame(width: diameter, height: diameter)
+            .background(Circle().fill(Color.black))
+            .overlay {
+                Circle().strokeBorder(
+                    AngularGradient(
+                        colors: [
+                            .black,
+                            RMCTheme.goldDeep,
+                            RMCTheme.goldBright,
+                            .black,
+                            RMCTheme.gold,
+                            .black
+                        ],
+                        center: .center
+                    ),
+                    lineWidth: max(2, diameter * 0.06)
+                )
+            }
+            .accessibilityLabel("Profile")
+    }
+}
+
 struct RMCBrandTitle: View {
     var size: CGFloat = 44
 

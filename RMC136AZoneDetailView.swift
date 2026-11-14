@@ -8,20 +8,11 @@ struct RMC136AZoneDetailView: View {
             VStack(alignment: .leading, spacing: 20) {
                 
                 // MARK: - 1. Top Featured Image Banner
-                Image("136Zone_Game")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(width: UIScreen.main.bounds.width - 32, height: 200)
-                    .clipped()
-                    .goldTrim()
+                FeedPhotoFrame(postKey: "section-zone", showsTitle: false)
                     .padding(.horizontal)
-                
-                // MARK: - 2. Safe Wrapping Overview Text
+
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Inside the 136Zone Experience")
-                        .font(.title2)
-                        .fontWeight(.light)
-                        .foregroundColor(RMCTheme.ivory)
+                    PosterTitle(text: "Inside the 136Zone Experience", size: 30)
                     
                     Text("Tactical Framework Overview")
                         .font(.subheadline).bold().foregroundColor(RMCTheme.gold)
@@ -55,9 +46,10 @@ struct RMC136AZoneDetailView: View {
                                         .goldTrim(cornerRadius: 10)
                                     
                                     Text(alienImages[index].replacingOccurrences(of: "_", with: " "))
-                                        .font(.caption).bold()
+                                        .font(.custom("DINCondensed-Bold", size: 14))
                                         .foregroundColor(RMCTheme.ivory)
                                         .lineLimit(1)
+                                        .minimumScaleFactor(0.6)
                                 }
                                 .frame(width: 130)
                             }

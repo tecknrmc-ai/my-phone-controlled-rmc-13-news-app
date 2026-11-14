@@ -55,12 +55,20 @@ private struct SectionPageChrome<Content: View>: View {
     let imageName: String?
     let systemImage: String
     var imageFillsFrame: Bool = true
+    var postKey: String? = nil
     @ViewBuilder var content: Content
 
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 18) {
-                if let imageName {
+                if let postKey {
+                    ZStack(alignment: .topTrailing) {
+                        FeedImage(postKey: postKey, locksAspect: imageFillsFrame)
+                            .goldTrim()
+                        FeedPostMenu(postKey: postKey)
+                            .padding(8)
+                    }
+                } else if let imageName {
                     Image(imageName)
                         .resizable()
                         .aspectRatio(contentMode: imageFillsFrame ? .fill : .fit)
@@ -75,16 +83,9 @@ private struct SectionPageChrome<Content: View>: View {
                         .frame(maxWidth: .infinity, alignment: .leading)
                 }
 
-                Text(kicker)
-                    .font(.subheadline)
-                    .bold()
-                    .tracking(2)
-                    .foregroundColor(RMCTheme.gold)
+                PosterTitle(text: kicker, size: 16, color: RMCTheme.gold)
 
-                Text(title)
-                    .font(.largeTitle)
-                    .fontWeight(.light)
-                    .foregroundColor(RMCTheme.ivory)
+                PosterTitle(text: title, size: 40)
 
                 content
             }
@@ -98,7 +99,7 @@ private struct SectionPageChrome<Content: View>: View {
 
 struct MusicNewsTipsView: View {
     var body: some View {
-        SectionPageChrome(title: "RMC13 Musicnews and tips", kicker: "Studio Desk", imageName: "RMC13_MAin", systemImage: "music.note.list") {
+        SectionPageChrome(title: "RMC13 Musicnews and tips", kicker: "Studio Desk", imageName: "RMC13_MAin", systemImage: "music.note.list", postKey: "section-music") {
             Text("Coverage of RMC13 records, session notes, mix tips, and playlist placements. Use this desk for weekly music news and practical production advice.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
@@ -120,7 +121,7 @@ struct MusicNewsTipsView: View {
 
 struct BattlezonePageView: View {
     var body: some View {
-        SectionPageChrome(title: "RMC136Abattlezone", kicker: "Tactical Sandbox", imageName: "RMC136AZone_Banner", systemImage: "scope", imageFillsFrame: false) {
+        SectionPageChrome(title: "RMC136Abattlezone", kicker: "Tactical Sandbox", imageName: "RMC136AZone_Banner", systemImage: "scope", postKey: "section-battle") {
             Text("RMC136Abattlezone is the competitive map layer for 136Zone operations. Track sector shifts, specimen catalogs, and live event windows from this page.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
@@ -148,7 +149,7 @@ struct BattlezonePageView: View {
 
 struct LegendsOfGloryPageView: View {
     var body: some View {
-        SectionPageChrome(title: "Legends of Glory", kicker: "Expansion Drop", imageName: "Legends_Glory", systemImage: "crown.fill") {
+        SectionPageChrome(title: "Legends of Glory", kicker: "Expansion Drop", imageName: "Legends_Glory", systemImage: "crown.fill", postKey: "section-legends") {
             Text("Legends of Glory is the large-scale battle expansion. Glory artists, ranked ladders, and limited cosmetics land through this rotation.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
@@ -158,6 +159,8 @@ struct LegendsOfGloryPageView: View {
                 "Unique rewards dropping this rotation",
                 "Spectator reels from RMC13 Productions"
             ])
+
+            GloryBattleArtists()
 
             NavigationLink(destination: ArticleDetailView(
                 title: "Legends of glory",
@@ -174,7 +177,7 @@ struct LegendsOfGloryPageView: View {
 
 struct MVP2012PageView: View {
     var body: some View {
-        SectionPageChrome(title: "Mvp2012", kicker: "Arroyo Valley", imageName: "MVP_Main", systemImage: "sportscourt.fill") {
+        SectionPageChrome(title: "Mvp2012", kicker: "Arroyo Valley", imageName: "MVP_Main", systemImage: "sportscourt.fill", postKey: "section-mvp") {
             Text("MVP 2012 is the Arroyo Valley player, coach, fan, and gamer hub. Claim a character package, follow standings, and send your profile in for review.")
                 .font(.body)
                 .foregroundColor(RMCTheme.muted)
@@ -220,16 +223,9 @@ struct LAFilmModeView: View {
             VStack(alignment: .leading, spacing: 18) {
                 MovieShotCarousel()
 
-                Text("FULL LIST")
-                    .font(.subheadline)
-                    .bold()
-                    .tracking(2)
-                    .foregroundColor(RMCTheme.gold)
+                PosterTitle(text: "FULL LIST", size: 16, color: RMCTheme.gold)
 
-                Text("Movies")
-                    .font(.largeTitle)
-                    .fontWeight(.light)
-                    .foregroundColor(RMCTheme.ivory)
+                PosterTitle(text: "Movies", size: 40)
 
                 Text("Lafilmmode covers RMC13 film sets, lookbooks, and Los Angeles production notes. Use it for camera setups, location lists, and premiere timing.")
                     .font(.body)
@@ -306,57 +302,71 @@ private func labelButton(_ title: String) -> some View {
 
 /// One-at-a-time hero on the movies list. Advances on its own.
 struct MovieShotCarousel: View {
-    private let shots: [(name: String, image: String)] = [
-        ("Neecole", "Neecole_Main_shot"),
-        ("Moe", "Moe_GM_Shot"),
-        ("Glory", "Glory_movie_shot")
-    ]
+    @ObservedObject private var library = FeedLibrary.shared
+    @State private var selection = FeedLibrary.movieIDs[0]
 
-    @State private var index = 0
+    private var shots: [FeedPost] {
+        library.ordered(FeedLibrary.movieIDs)
+    }
 
     var body: some View {
-        Color.clear
-            .aspectRatio(1.22, contentMode: .fit)
-            .overlay {
-                TabView(selection: $index) {
-                    ForEach(shots.indices, id: \.self) { shotIndex in
-                        movieCard(shots[shotIndex])
-                            .tag(shotIndex)
+        let visible = shots
+        if !visible.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+            Color.clear
+                .aspectRatio(1.22, contentMode: .fit)
+                .overlay {
+                    TabView(selection: $selection) {
+                        ForEach(visible) { shot in
+                            movieCard(shot)
+                                .tag(shot.id)
+                        }
+                    }
+                    .tabViewStyle(.page(indexDisplayMode: .automatic))
+                }
+                .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+                .goldTrim()
+                .overlay(alignment: .topTrailing) {
+                    FeedPostMenu(postKey: selection)
+                        .padding(10)
+                }
+                .accessibilityLabel("Movie shots")
+            FitChoiceBar(postKey: selection)
+            }
+            .onChange(of: visible.map(\.id)) { _, ids in
+                if !ids.contains(selection), let first = ids.first {
+                    selection = first
+                }
+            }
+                .task(id: visible.map(\.id)) {
+                    while !Task.isCancelled {
+                        try? await Task.sleep(for: .seconds(4))
+                        guard !Task.isCancelled else { return }
+                        let ids = visible.map(\.id)
+                        guard !ids.isEmpty else { return }
+                        let current = ids.firstIndex(of: selection) ?? 0
+                        withAnimation(.easeInOut(duration: 0.45)) {
+                            selection = ids[(current + 1) % ids.count]
+                        }
                     }
                 }
-                .tabViewStyle(.page(indexDisplayMode: .automatic))
-            }
-            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-            .goldTrim()
-            .accessibilityLabel("Movie shots")
-        .task {
-            while !Task.isCancelled {
-                try? await Task.sleep(for: .seconds(4))
-                guard !Task.isCancelled else { return }
-                withAnimation(.easeInOut(duration: 0.45)) {
-                    index = (index + 1) % shots.count
-                }
-            }
         }
     }
 
-    private func movieCard(_ shot: (name: String, image: String)) -> some View {
-        Color.black
-            .overlay {
-                Image(shot.image)
-                    .resizable()
-                    .scaledToFill()
-            }
-            .clipped()
+    private func movieCard(_ shot: FeedPost) -> some View {
+        FeedImage(postKey: shot.id, showsFitBar: false, locksAspect: false)
             .overlay(alignment: .bottomLeading) {
-                Text(shot.name)
-                    .font(.headline)
+                Text(shot.title)
+                    .font(.custom("DINCondensed-Bold", size: 28))
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.6)
                     .foregroundStyle(RMCTheme.ivory)
-                    .padding(.horizontal, 12)
-                    .padding(.vertical, 6)
+                    .shadow(color: .black.opacity(0.85), radius: 3, y: 1)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 8)
                     .background(Color.black.opacity(0.55), in: Capsule())
                     .padding(12)
             }
-            .accessibilityLabel(shot.name)
+            .accessibilityLabel(shot.title)
     }
 }
