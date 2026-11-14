@@ -514,6 +514,9 @@ struct HomeView: View {
                 }
             }
             .rmcScreen()
+            .safeAreaInset(edge: .top, spacing: 0) {
+                RMCSeasonBar()
+            }
             // MARK: - Top Left App Profile Action Button Bubble
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

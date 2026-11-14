@@ -117,6 +117,9 @@ struct NewsArticlesView: View {
                 }
             }
             .rmcScreen()
+            .safeAreaInset(edge: .top, spacing: 0) {
+                RMCSeasonBar()
+            }
         }
     }
 }
