@@ -1,0 +1,81 @@
+{
+  "name": "Artist",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Artist stage name"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Compelling backstory"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Artist photo URL"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order in the cypher"
+    },
+    "songs_achievements": {
+      "type": "string",
+      "description": "Songs, achievements, and social media presence"
+    },
+    "music_videos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Music video links"
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Artist skills list"
+    },
+    "rating": {
+      "type": "number",
+      "description": "Artist rating number (1-100)"
+    },
+    "rap_styles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Rap styles based on content"
+    },
+    "city": {
+      "type": "string",
+      "description": "City"
+    },
+    "state": {
+      "type": "string",
+      "description": "State"
+    },
+    "high_school": {
+      "type": "string",
+      "description": "High school"
+    },
+    "businesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Current businesses or partnerships"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

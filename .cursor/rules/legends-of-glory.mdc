@@ -1,0 +1,18 @@
+---
+description: Legends Of Glory is the Base44 app checked out in legends-of-glory. Keep local edits in sync with its sandbox.
+globs: legends-of-glory/**
+alwaysApply: false
+---
+
+# Legends Of Glory
+
+`legends-of-glory/` is the source of the Base44 app **Legends Of Glory**.
+
+- App ID: `6a2db64ae683a6c053ea9251`
+- Editor: https://app.base44.com/apps/6a2db64ae683a6c053ea9251/editor/preview
+- Published site: https://legendsofgloryonline.base44.app
+- This app is not connected to GitHub. The Base44 sandbox is the live copy the editor preview uses.
+
+When you change files in this folder, write the same change back to that sandbox (Base44 MCP `edit_file` / `write_file`, or `base44 sandbox edit` / `base44 sandbox write` with this app ID) so the preview updates. Do not run `base44 deploy`, `base44 entities push`, or `base44 functions deploy`. Those bypass the sandbox and get overwritten on the next sync.
+
+Do not commit `legends-of-glory/.env.local` or `legends-of-glory/base44/.app.jsonc`.

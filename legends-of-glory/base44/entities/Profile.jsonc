@@ -1,0 +1,48 @@
+{
+  "name": "Profile",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "Unique user ID across all apps"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User email"
+    },
+    "display_name": {
+      "type": "string",
+      "description": "User display name"
+    },
+    "avatar_url": {
+      "type": "string",
+      "description": "Profile photo URL"
+    },
+    "total_points": {
+      "type": "number",
+      "default": 0,
+      "description": "Aggregated points from all apps"
+    },
+    "rank": {
+      "type": "string",
+      "default": "rookie",
+      "description": "User rank based on points"
+    },
+    "achievements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of unlocked achievements"
+    },
+    "joined_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "When user first joined"
+    }
+  },
+  "required": [
+    "user_id",
+    "user_email"
+  ]
+}
