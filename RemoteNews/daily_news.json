@@ -259,6 +259,37 @@
     "tabs": ["Gaming"]
   },
   {
+    "id": "2026-11-18-america-hormuz-01",
+    "title": "America Desk Tracks the 2026 Strait of Hormuz Crisis as Global Energy Lanes Burn",
+    "category": "America",
+    "summary": "Nearly nine months of maritime war, naval blockades, and tanker fires reshape U.S. security and energy markets.",
+    "date": "Nov 18, 2026",
+    "imageURL": "",
+    "imageName": "",
+    "article": "The America news desk tracks the 2026 Strait of Hormuz crisis as the world’s most critical energy artery becomes an active warzone—covering the spark, escalation, diplomacy, markets, and the arsenal bill behind Operation Epic Fury. Open STRAIT OF HORMUZ for the full topic carousel, including THE WAR and WAR EXPENSES.",
+    "kicker": "MAIN FEATURE",
+    "byline": "America Desk · Just now",
+    "readTime": "5 min read",
+    "isHero": true,
+    "isFeatured": true,
+    "tabs": ["America"]
+  },
+  {
+    "id": "2026-11-18-america-war-expenses-01",
+    "title": "The Arsenal Bill: How Much Ammunition and Weaponry the U.S. Has Expended in the 2026 Iran Conflict—and What It Has Cost",
+    "category": "America",
+    "summary": "Nearly nine months into Operation Epic Fury, munitions burn and strategic inventory shortfalls push the U.S. war bill past $47 billion—and far higher when energy shocks are counted.",
+    "date": "Nov 18, 2026",
+    "imageURL": "",
+    "imageName": "",
+    "article": "The Arsenal Bill covers Operation Epic Fury munitions burn, Patriot/THAAD/Tomahawk/JASSM/SM stockpile drain, aircraft losses, strategic inventory shortfalls, and the full cost stack past $150 billion when energy shocks are included. Open America → STRAIT OF HORMUZ → WAR EXPENSES for the complete popup story.",
+    "kicker": "WAR EXPENSES",
+    "byline": "America Desk · Mid-November 2026",
+    "readTime": "9 min read",
+    "isFeatured": true,
+    "tabs": ["America"]
+  },
+  {
     "id": "2026-11-18-ai-brand-race-01",
     "title": "AI Is Building Brands Faster Than Ever — Don’t Let Your Brand Get Left Out the Race for Advanced Technology",
     "category": "AI",
