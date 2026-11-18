@@ -1,0 +1,54 @@
+{
+  "name": "News",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "News article title"
+    },
+    "content": {
+      "type": "string",
+      "description": "Article content"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Featured photo URL"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "artist",
+        "staff",
+        "general"
+      ],
+      "default": "general",
+      "description": "News category"
+    },
+    "related_artist_id": {
+      "type": "string",
+      "description": "Related artist ID (if applicable)"
+    },
+    "related_staff_id": {
+      "type": "string",
+      "description": "Related staff member ID (if applicable)"
+    },
+    "published_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Publication date"
+    },
+    "author": {
+      "type": "string",
+      "description": "Article author"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured article flag"
+    }
+  },
+  "required": [
+    "title",
+    "content"
+  ]
+}

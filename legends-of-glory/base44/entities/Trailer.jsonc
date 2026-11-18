@@ -1,0 +1,52 @@
+{
+  "name": "Trailer",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Trailer title"
+    },
+    "video_url": {
+      "type": "string",
+      "description": "Video file URL"
+    },
+    "thumbnail_url": {
+      "type": "string",
+      "description": "Thumbnail image URL"
+    },
+    "description": {
+      "type": "string",
+      "description": "Trailer description"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "behind_the_scenes",
+        "music_video",
+        "teaser",
+        "commercial"
+      ],
+      "default": "teaser",
+      "description": "Trailer category"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false,
+      "description": "Featured trailer flag"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Release date"
+    }
+  },
+  "required": [
+    "title",
+    "video_url"
+  ]
+}

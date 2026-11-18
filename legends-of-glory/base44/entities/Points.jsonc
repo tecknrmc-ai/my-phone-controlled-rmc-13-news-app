@@ -1,0 +1,35 @@
+{
+  "name": "Points",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string",
+      "description": "User ID from external app"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "User email for identification"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "User display name"
+    },
+    "points": {
+      "type": "number",
+      "default": 0,
+      "description": "Total points accumulated"
+    },
+    "source_app": {
+      "type": "string",
+      "description": "Which app awarded these points"
+    },
+    "activity_type": {
+      "type": "string",
+      "description": "Type of activity that earned points"
+    }
+  },
+  "required": [
+    "user_id",
+    "user_email"
+  ]
+}

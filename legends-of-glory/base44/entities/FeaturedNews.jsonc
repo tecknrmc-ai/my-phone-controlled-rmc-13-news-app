@@ -1,0 +1,32 @@
+{
+  "name": "FeaturedNews",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string",
+      "description": "Featured news card title"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Card image URL"
+    },
+    "link": {
+      "type": "string",
+      "description": "Optional URL to open when card is clicked"
+    },
+    "order": {
+      "type": "number",
+      "default": 0,
+      "description": "Display order in the carousel"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether the card shows on the landing page"
+    }
+  },
+  "required": [
+    "title",
+    "photo_url"
+  ]
+}

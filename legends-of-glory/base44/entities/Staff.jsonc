@@ -1,0 +1,25 @@
+{
+  "name": "Staff",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Staff member name"
+    },
+    "role": {
+      "type": "string",
+      "description": "Role or title"
+    },
+    "photo_url": {
+      "type": "string",
+      "description": "Photo URL"
+    },
+    "order": {
+      "type": "number",
+      "description": "Display order in carousel"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

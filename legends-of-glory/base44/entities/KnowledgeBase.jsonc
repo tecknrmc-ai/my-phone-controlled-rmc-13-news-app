@@ -1,0 +1,42 @@
+{
+  "name": "KnowledgeBase",
+  "type": "object",
+  "properties": {
+    "category": {
+      "type": "string",
+      "enum": [
+        "artist",
+        "staff",
+        "production",
+        "general",
+        "event",
+        "music"
+      ],
+      "description": "Category of knowledge"
+    },
+    "question": {
+      "type": "string",
+      "description": "Common question this entry answers"
+    },
+    "answer": {
+      "type": "string",
+      "description": "Detailed answer"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Keywords for search"
+    },
+    "related_entity_id": {
+      "type": "string",
+      "description": "Related artist or staff ID if applicable"
+    }
+  },
+  "required": [
+    "category",
+    "question",
+    "answer"
+  ]
+}
