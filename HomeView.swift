@@ -343,6 +343,9 @@ struct HomeView: View {
                     RMCBrandTitle(size: 48)
                         .padding(.top, 6)
 
+                    SharedVideoLaneView(lane: .mainFeed)
+                        .padding(.horizontal)
+
                     // MARK: - Main story carousel
                     FlashyCarouselView(
                         title: nil,
@@ -353,18 +356,10 @@ struct HomeView: View {
 
                     // MARK: - Top headliner
                     VStack(alignment: .leading, spacing: 14) {
-                        Text("HEADLINER")
-                            .font(.caption)
-                            .bold()
-                            .tracking(3)
-                            .foregroundColor(RMCTheme.gold)
+                        PosterTitle(text: "HEADLINER", size: 16, color: RMCTheme.gold)
                             .padding(.horizontal)
 
-                        Text("RMC13 Brings Film,Audio, Animation, Video games, and more to one location.")
-                            .font(.title2)
-                            .fontWeight(.light)
-                            .foregroundColor(RMCTheme.ivory)
-                            .fixedSize(horizontal: false, vertical: true)
+                        PosterTitle(text: "RMC13 Brings Film, Audio, Animation, Video games, and more to one location.", size: 28)
                             .padding(.horizontal)
 
                         FlashyCarouselView(
@@ -376,25 +371,8 @@ struct HomeView: View {
                     }
                     
                     // MARK: - 1. Top Featured Hero Image Banner Layout
-                    VStack(alignment: .leading, spacing: 12) {
-                        Image("RMC13_MAin")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(maxWidth: .infinity)
-                            .frame(height: 200)
-                            .clipped()
-                            .goldTrim()
-                        
-                        Text("BREAKING: RMC13 Major Update Launched")
-                            .font(.title2)
-                            .fontWeight(.light)
-                            .foregroundColor(RMCTheme.ivory)
-                        
-                        Text("The latest edition brings completely redesigned UI layouts, faster compilation, and seamless Xcode cross-compatibility.")
-                            .font(.subheadline)
-                            .foregroundColor(RMCTheme.muted)
-                    }
-                    .padding(.horizontal)
+                    FeedPhotoFrame(postKey: "feed-breaking")
+                        .padding(.horizontal)
 
                     // MARK: - Headline photos carousel
                     FlashyCarouselView(
@@ -470,26 +448,22 @@ struct HomeView: View {
                     .padding(.horizontal)
                     
                     // MARK: - 3. RMC136AZone View Block Promo Card
-                    NavigationLink(destination: RMC136AZoneDetailView()) {
-                        VStack(alignment: .leading, spacing: 12) {
-                            Text("rmc136azone")
-                                .font(.subheadline)
-                                .bold()
-                                .foregroundColor(RMCTheme.gold)
-                            
-                            Image("136Zone_Game")
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(maxWidth: .infinity)
-                                .frame(height: 160)
-                                .clipped()
-                                .goldTrim()
-                            
+                    VStack(alignment: .leading, spacing: 12) {
+                        PosterTitle(text: "rmc136azone", size: 20, color: RMCTheme.gold)
+                        ZStack(alignment: .topTrailing) {
+                            NavigationLink(destination: RMC136AZoneDetailView()) {
+                                FeedImage(postKey: "section-zone-card", showsFitBar: false)
+                                    .goldTrim()
+                            }
+                            .buttonStyle(.plain)
+                            FeedPostMenu(postKey: "section-zone-card")
+                                .padding(8)
+                        }
+                        FitChoiceBar(postKey: "section-zone-card")
+                        NavigationLink(destination: RMC136AZoneDetailView()) {
                             HStack {
                                 VStack(alignment: .leading, spacing: 4) {
-                                    Text("Inside the 136Zone Experience")
-                                        .font(.headline)
-                                        .foregroundColor(RMCTheme.ivory)
+                                    PosterTitle(text: "Inside the 136Zone Experience", size: 24)
                                     Text("Explore tactical shifts, zones, and custom alien catalog metrics.")
                                         .font(.subheadline)
                                         .foregroundColor(RMCTheme.muted)
@@ -499,6 +473,7 @@ struct HomeView: View {
                                     .foregroundColor(RMCTheme.gold.opacity(0.7))
                             }
                         }
+                        .buttonStyle(.plain)
                     }
                     .padding(.horizontal)
                 }
@@ -514,6 +489,9 @@ struct HomeView: View {
                 }
             }
             .rmcScreen()
+            .safeAreaInset(edge: .top, spacing: 0) {
+                RMCSeasonBar()
+            }
             // MARK: - Top Left App Profile Action Button Bubble
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -522,16 +500,12 @@ struct HomeView: View {
                     }) {
                         HStack(spacing: 8) {
                             if session.hasAppProfile {
-                                Image(systemName: session.profileImage)
-                                    .font(.title3)
-                                    .foregroundColor(RMCTheme.gold)
+                                ProfileGoldRing(systemImage: session.profileImage, diameter: 32)
                                 Text(session.username)
                                     .font(.subheadline).bold()
                                     .foregroundColor(RMCTheme.ivory)
                             } else {
-                                Image(systemName: "person.crop.circle.badge.plus")
-                                    .font(.title3)
-                                    .foregroundColor(RMCTheme.gold)
+                                ProfileGoldRing(systemImage: "person.crop.circle.badge.plus", diameter: 32)
                                 Text("Sign In")
                                     .font(.subheadline).bold()
                                     .foregroundColor(RMCTheme.gold)

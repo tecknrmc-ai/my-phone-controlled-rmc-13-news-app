@@ -8,8 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		4E07D57B30942F880002D7F0 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E07D57A30942F880002D7F0 /* Article.swift */; };
-		4E844C3930945E68008AD4E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C3830945E68008AD4E5 /* HomeView.swift */; };
 		4E844C3B30945F2D008AD4E5 /* RMC136AZoneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C3A30945F2D008AD4E5 /* RMC136AZoneDetailView.swift */; };
+		4E36C5C530A88826007898D2 /* RMC_Original_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5B530A88826007898D2 /* RMC_Original_LOgo_vid.MP4 */; };
+		4E36C5C630A88826007898D2 /* Cranes_music_logo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5C030A88826007898D2 /* Cranes_music_logo_vid.MP4 */; };
+		4E36C5C730A88826007898D2 /* TAM_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5B830A88826007898D2 /* TAM_LOgo_vid.MP4 */; };
+		4E36C5C830A88826007898D2 /* RMCVFX_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5B630A88826007898D2 /* RMCVFX_LOgo_vid.MP4 */; };
+		4E36C5C930A88826007898D2 /* Glory_MS_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BD30A88826007898D2 /* Glory_MS_vid.MP4 */; };
+		4E36C5CA30A88826007898D2 /* RMC13_TT_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5B930A88826007898D2 /* RMC13_TT_LOgo_vid.MP4 */; };
+		4E36C5CB30A88826007898D2 /* RTAM2_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BC30A88826007898D2 /* RTAM2_LOgo_vid.MP4 */; };
+		4E36C5CC30A88826007898D2 /* RMC13_apptesters_logo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5C230A88826007898D2 /* RMC13_apptesters_logo_vid.MP4 */; };
+		4E36C5CD30A88826007898D2 /* Nefstech_logo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5C330A88826007898D2 /* Nefstech_logo.MP4 */; };
+		4E36C5CE30A88826007898D2 /* AVHS_Eric_AF_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BE30A88826007898D2 /* AVHS_Eric_AF_vid.MP4 */; };
+		4E36C5CF30A88826007898D2 /* RMC_Tools_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5B730A88826007898D2 /* RMC_Tools_LOgo_vid.MP4 */; };
+		4E36C5D030A88826007898D2 /* Gloyr_Main_logo.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5C130A88826007898D2 /* Gloyr_Main_logo.MP4 */; };
+		4E36C5D130A88826007898D2 /* Glory_MS_HT_.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BF30A88826007898D2 /* Glory_MS_HT_.MP4 */; };
+		4E36C5D230A88826007898D2 /* Glory_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BA30A88826007898D2 /* Glory_LOgo_vid.MP4 */; };
+		4E36C5D330A88826007898D2 /* RMC13Global_LOgo_vid.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5BB30A88826007898D2 /* RMC13Global_LOgo_vid.MP4 */; };
+		4E36C5D930A88A18007898D2 /* Legends of Glory Pre interview 2.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5D830A88A18007898D2 /* Legends of Glory Pre interview 2.MP4 */; };
+		4E36C5DB30A88A6A007898D2 /* Glory_Production.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5DA30A88A6A007898D2 /* Glory_Production.MP4 */; };
+		4E36C5DD30A88AAF007898D2 /* Glory app testers commercial Reel footage  2.M4V in Resources */ = {isa = PBXBuildFile; fileRef = 4E36C5DC30A88AAF007898D2 /* Glory app testers commercial Reel footage  2.M4V */; };
+		4E579F2B309B954E00A849C7 /* Glory app testers commercial Reel footage .M4V in Resources */ = {isa = PBXBuildFile; fileRef = 4E579F29309B954D00A849C7 /* Glory app testers commercial Reel footage .M4V */; };
+		4E579F2C309B954E00A849C7 /* BZ2.M4V in Resources */ = {isa = PBXBuildFile; fileRef = 4E579F28309B954D00A849C7 /* BZ2.M4V */; };
+		4E579F2D309B954E00A849C7 /* log pr.M4V in Resources */ = {isa = PBXBuildFile; fileRef = 4E579F2A309B954D00A849C7 /* log pr.M4V */; };
+		4E844C3930945E68008AD4E5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C3830945E68008AD4E5 /* HomeView.swift */; };
 		4E844C3D30945FCF008AD4E5 /* MVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C3C30945FCF008AD4E5 /* MVPView.swift */; };
 		4E844C3F30946374008AD4E5 /* MVPRegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C3E30946374008AD4E5 /* MVPRegistrationView.swift */; };
 		4E844C4130946BD3008AD4E5 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C4030946BD3008AD4E5 /* MainTabView.swift */; };
@@ -19,6 +40,21 @@
 		4E844C4930949B02008AD4E5 /* HomeSectionPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C4830949B02008AD4E5 /* HomeSectionPages.swift */; };
 		4E844C4B3094C100008AD4E5 /* FlashyCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C4A3094C100008AD4E5 /* FlashyCarouselView.swift */; };
 		4E844C4D3095D100008AD4E5 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C4C3095D100008AD4E5 /* AppTheme.swift */; };
+		4E844C4F3096E100008AD4E5 /* FeatureStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C4E3096E100008AD4E5 /* FeatureStories.swift */; };
+		4E844C513097F100008AD4E5 /* MVP2012SignUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C503097F100008AD4E5 /* MVP2012SignUp.swift */; };
+		4E844C553098B100008AD4E5 /* SocialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C543098B100008AD4E5 /* SocialStore.swift */; };
+		4E844C573098B200008AD4E5 /* CommunitySocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C563098B200008AD4E5 /* CommunitySocial.swift */; };
+		4E844C59309A0100008AD4E5 /* GameDesigner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E844C58309A0100008AD4E5 /* GameDesigner.swift */; };
+		4EA3FC86309BE0C300EFD906 /* RMCTV LOGO.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA3FC85309BE0C300EFD906 /* RMCTV LOGO.MP4 */; };
+		4EA4FC87309CF100008AD4E5 /* AVHSFootball.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC86309CF100008AD4E5 /* AVHSFootball.swift */; };
+		4EA4FC89309D1100008AD4E5 /* BrandBuild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC88309D1100008AD4E5 /* BrandBuild.swift */; };
+		4EA4FC8B309E2200008AD4E5 /* RMC13HeroHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC8A309E2200008AD4E5 /* RMC13HeroHeaderView.swift */; };
+		4EA4FC8D309E2300008AD4E5 /* ArtistRecruitmentSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC8C309E2300008AD4E5 /* ArtistRecruitmentSectionView.swift */; };
+		4EA4FC91309E2500008AD4E5 /* RMC13MusicHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC90309E2500008AD4E5 /* RMC13MusicHub.swift */; };
+		4EA4FC9310A1F001008AD4E5 /* ProductionInquiryHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC9210A1F001008AD4E5 /* ProductionInquiryHub.swift */; };
+		4EA4FC9510A2F002008AD4E5 /* HomeServiceDesks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4FC9410A2F002008AD4E5 /* HomeServiceDesks.swift */; };
+		4EB1F00110A2F101008AD4E5 /* ProfessionalHeaderBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1F00010A2F101008AD4E5 /* ProfessionalHeaderBannerView.swift */; };
+		4EB1F00310A2F102008AD4E5 /* RMC13ProductionBannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB1F00210A2F102008AD4E5 /* RMC13ProductionBannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +79,29 @@
 		4E07D55B30942F2C0002D7F0 /* RMC13 News AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMC13 News AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E07D56530942F2C0002D7F0 /* RMC13 News AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMC13 News AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E07D57A30942F880002D7F0 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		4E844C3830945E68008AD4E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E844C3A30945F2D008AD4E5 /* RMC136AZoneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMC136AZoneDetailView.swift; sourceTree = "<group>"; };
+		4E36C5B530A88826007898D2 /* RMC_Original_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMC_Original_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5B630A88826007898D2 /* RMCVFX_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMCVFX_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5B730A88826007898D2 /* RMC_Tools_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMC_Tools_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5B830A88826007898D2 /* TAM_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = TAM_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5B930A88826007898D2 /* RMC13_TT_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMC13_TT_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BA30A88826007898D2 /* Glory_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glory_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BB30A88826007898D2 /* RMC13Global_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMC13Global_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BC30A88826007898D2 /* RTAM2_LOgo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RTAM2_LOgo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BD30A88826007898D2 /* Glory_MS_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glory_MS_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BE30A88826007898D2 /* AVHS_Eric_AF_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = AVHS_Eric_AF_vid.MP4; sourceTree = "<group>"; };
+		4E36C5BF30A88826007898D2 /* Glory_MS_HT_.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glory_MS_HT_.MP4; sourceTree = "<group>"; };
+		4E36C5C030A88826007898D2 /* Cranes_music_logo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Cranes_music_logo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5C130A88826007898D2 /* Gloyr_Main_logo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Gloyr_Main_logo.MP4; sourceTree = "<group>"; };
+		4E36C5C230A88826007898D2 /* RMC13_apptesters_logo_vid.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = RMC13_apptesters_logo_vid.MP4; sourceTree = "<group>"; };
+		4E36C5C330A88826007898D2 /* Nefstech_logo.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Nefstech_logo.MP4; sourceTree = "<group>"; };
+		4E36C5D830A88A18007898D2 /* Legends of Glory Pre interview 2.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Legends of Glory Pre interview 2.MP4"; sourceTree = "<group>"; };
+		4E36C5DA30A88A6A007898D2 /* Glory_Production.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Glory_Production.MP4; sourceTree = "<group>"; };
+		4E36C5DC30A88AAF007898D2 /* Glory app testers commercial Reel footage  2.M4V */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glory app testers commercial Reel footage  2.M4V"; sourceTree = "<group>"; };
+		4E579F28309B954D00A849C7 /* BZ2.M4V */ = {isa = PBXFileReference; lastKnownFileType = file; path = BZ2.M4V; sourceTree = "<group>"; };
+		4E579F29309B954D00A849C7 /* Glory app testers commercial Reel footage .M4V */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Glory app testers commercial Reel footage .M4V"; sourceTree = "<group>"; };
+		4E579F2A309B954D00A849C7 /* log pr.M4V */ = {isa = PBXFileReference; lastKnownFileType = file; path = "log pr.M4V"; sourceTree = "<group>"; };
+		4E844C3830945E68008AD4E5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		4E844C3C30945FCF008AD4E5 /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
 		4E844C3E30946374008AD4E5 /* MVPRegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPRegistrationView.swift; sourceTree = "<group>"; };
 		4E844C4030946BD3008AD4E5 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -54,6 +111,21 @@
 		4E844C4830949B02008AD4E5 /* HomeSectionPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSectionPages.swift; sourceTree = "<group>"; };
 		4E844C4A3094C100008AD4E5 /* FlashyCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashyCarouselView.swift; sourceTree = "<group>"; };
 		4E844C4C3095D100008AD4E5 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		4E844C4E3096E100008AD4E5 /* FeatureStories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureStories.swift; sourceTree = "<group>"; };
+		4E844C503097F100008AD4E5 /* MVP2012SignUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVP2012SignUp.swift; sourceTree = "<group>"; };
+		4E844C543098B100008AD4E5 /* SocialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialStore.swift; sourceTree = "<group>"; };
+		4E844C563098B200008AD4E5 /* CommunitySocial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunitySocial.swift; sourceTree = "<group>"; };
+		4E844C58309A0100008AD4E5 /* GameDesigner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDesigner.swift; sourceTree = "<group>"; };
+		4EA3FC85309BE0C300EFD906 /* RMCTV LOGO.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RMCTV LOGO.MP4"; sourceTree = "<group>"; };
+		4EA4FC86309CF100008AD4E5 /* AVHSFootball.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVHSFootball.swift; sourceTree = "<group>"; };
+		4EA4FC88309D1100008AD4E5 /* BrandBuild.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandBuild.swift; sourceTree = "<group>"; };
+		4EA4FC8A309E2200008AD4E5 /* RMC13HeroHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMC13HeroHeaderView.swift; sourceTree = "<group>"; };
+		4EA4FC8C309E2300008AD4E5 /* ArtistRecruitmentSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistRecruitmentSectionView.swift; sourceTree = "<group>"; };
+		4EA4FC90309E2500008AD4E5 /* RMC13MusicHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMC13MusicHub.swift; sourceTree = "<group>"; };
+		4EA4FC9210A1F001008AD4E5 /* ProductionInquiryHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionInquiryHub.swift; sourceTree = "<group>"; };
+		4EA4FC9410A2F002008AD4E5 /* HomeServiceDesks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceDesks.swift; sourceTree = "<group>"; };
+		4EB1F00010A2F101008AD4E5 /* ProfessionalHeaderBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfessionalHeaderBannerView.swift; sourceTree = "<group>"; };
+		4EB1F00210A2F102008AD4E5 /* RMC13ProductionBannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMC13ProductionBannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -102,6 +174,13 @@
 		4E07D54230942F260002D7F0 = {
 			isa = PBXGroup;
 			children = (
+				4E844C58309A0100008AD4E5 /* GameDesigner.swift */,
+				4EA4FC86309CF100008AD4E5 /* AVHSFootball.swift */,
+				4EA4FC88309D1100008AD4E5 /* BrandBuild.swift */,
+				4E844C563098B200008AD4E5 /* CommunitySocial.swift */,
+				4E844C543098B100008AD4E5 /* SocialStore.swift */,
+				4E844C503097F100008AD4E5 /* MVP2012SignUp.swift */,
+				4E844C4E3096E100008AD4E5 /* FeatureStories.swift */,
 				4E844C4C3095D100008AD4E5 /* AppTheme.swift */,
 				4E844C4A3094C100008AD4E5 /* FlashyCarouselView.swift */,
 				4E844C4830949B02008AD4E5 /* HomeSectionPages.swift */,
@@ -111,12 +190,27 @@
 				4E844C4030946BD3008AD4E5 /* MainTabView.swift */,
 				4E844C3E30946374008AD4E5 /* MVPRegistrationView.swift */,
 				4E844C3C30945FCF008AD4E5 /* MVPView.swift */,
-				4E844C3A30945F2D008AD4E5 /* RMC136AZoneDetailView.swift */,
 				4E844C3830945E68008AD4E5 /* HomeView.swift */,
+				4E844C3A30945F2D008AD4E5 /* RMC136AZoneDetailView.swift */,
+				4EA4FC8A309E2200008AD4E5 /* RMC13HeroHeaderView.swift */,
+				4EA4FC8C309E2300008AD4E5 /* ArtistRecruitmentSectionView.swift */,
+				4EA4FC90309E2500008AD4E5 /* RMC13MusicHub.swift */,
+				4EA4FC9210A1F001008AD4E5 /* ProductionInquiryHub.swift */,
+				4EA4FC9410A2F002008AD4E5 /* HomeServiceDesks.swift */,
+				4EB1F00010A2F101008AD4E5 /* ProfessionalHeaderBannerView.swift */,
+				4EB1F00210A2F102008AD4E5 /* RMC13ProductionBannerView.swift */,
 				4E07D57A30942F880002D7F0 /* Article.swift */,
 				4E07D54D30942F260002D7F0 /* RMC13 News App */,
 				4E07D55E30942F2C0002D7F0 /* RMC13 News AppTests */,
 				4E07D56830942F2C0002D7F0 /* RMC13 News AppUITests */,
+				4E579F28309B954D00A849C7 /* BZ2.M4V */,
+				4E579F29309B954D00A849C7 /* Glory app testers commercial Reel footage .M4V */,
+				4E579F2A309B954D00A849C7 /* log pr.M4V */,
+				4EA3FC85309BE0C300EFD906 /* RMCTV LOGO.MP4 */,
+				4E36C5D830A88A18007898D2 /* Legends of Glory Pre interview 2.MP4 */,
+				4E36C5DA30A88A6A007898D2 /* Glory_Production.MP4 */,
+				4E36C5DC30A88AAF007898D2 /* Glory app testers commercial Reel footage  2.M4V */,
+				4E36C5C430A88826007898D2 /* Logo_AI_Vids */,
 				4E07D54C30942F260002D7F0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,6 +223,28 @@
 				4E07D56530942F2C0002D7F0 /* RMC13 News AppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		4E36C5C430A88826007898D2 /* Logo_AI_Vids */ = {
+			isa = PBXGroup;
+			children = (
+				4E36C5B530A88826007898D2 /* RMC_Original_LOgo_vid.MP4 */,
+				4E36C5B630A88826007898D2 /* RMCVFX_LOgo_vid.MP4 */,
+				4E36C5B730A88826007898D2 /* RMC_Tools_LOgo_vid.MP4 */,
+				4E36C5B830A88826007898D2 /* TAM_LOgo_vid.MP4 */,
+				4E36C5B930A88826007898D2 /* RMC13_TT_LOgo_vid.MP4 */,
+				4E36C5BA30A88826007898D2 /* Glory_LOgo_vid.MP4 */,
+				4E36C5BB30A88826007898D2 /* RMC13Global_LOgo_vid.MP4 */,
+				4E36C5BC30A88826007898D2 /* RTAM2_LOgo_vid.MP4 */,
+				4E36C5BD30A88826007898D2 /* Glory_MS_vid.MP4 */,
+				4E36C5BE30A88826007898D2 /* AVHS_Eric_AF_vid.MP4 */,
+				4E36C5BF30A88826007898D2 /* Glory_MS_HT_.MP4 */,
+				4E36C5C030A88826007898D2 /* Cranes_music_logo_vid.MP4 */,
+				4E36C5C130A88826007898D2 /* Gloyr_Main_logo.MP4 */,
+				4E36C5C230A88826007898D2 /* RMC13_apptesters_logo_vid.MP4 */,
+				4E36C5C330A88826007898D2 /* Nefstech_logo.MP4 */,
+			);
+			path = Logo_AI_Vids;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +367,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E579F2B309B954E00A849C7 /* Glory app testers commercial Reel footage .M4V in Resources */,
+				4E579F2C309B954E00A849C7 /* BZ2.M4V in Resources */,
+				4EA3FC86309BE0C300EFD906 /* RMCTV LOGO.MP4 in Resources */,
+				4E579F2D309B954E00A849C7 /* log pr.M4V in Resources */,
+				4E36C5C530A88826007898D2 /* RMC_Original_LOgo_vid.MP4 in Resources */,
+				4E36C5C630A88826007898D2 /* Cranes_music_logo_vid.MP4 in Resources */,
+				4E36C5C730A88826007898D2 /* TAM_LOgo_vid.MP4 in Resources */,
+				4E36C5C830A88826007898D2 /* RMCVFX_LOgo_vid.MP4 in Resources */,
+				4E36C5C930A88826007898D2 /* Glory_MS_vid.MP4 in Resources */,
+				4E36C5CA30A88826007898D2 /* RMC13_TT_LOgo_vid.MP4 in Resources */,
+				4E36C5CB30A88826007898D2 /* RTAM2_LOgo_vid.MP4 in Resources */,
+				4E36C5CC30A88826007898D2 /* RMC13_apptesters_logo_vid.MP4 in Resources */,
+				4E36C5CD30A88826007898D2 /* Nefstech_logo.MP4 in Resources */,
+				4E36C5CE30A88826007898D2 /* AVHS_Eric_AF_vid.MP4 in Resources */,
+				4E36C5CF30A88826007898D2 /* RMC_Tools_LOgo_vid.MP4 in Resources */,
+				4E36C5D030A88826007898D2 /* Gloyr_Main_logo.MP4 in Resources */,
+				4E36C5D130A88826007898D2 /* Glory_MS_HT_.MP4 in Resources */,
+				4E36C5DD30A88AAF007898D2 /* Glory app testers commercial Reel footage  2.M4V in Resources */,
+				4E36C5D930A88A18007898D2 /* Legends of Glory Pre interview 2.MP4 in Resources */,
+				4E36C5D230A88826007898D2 /* Glory_LOgo_vid.MP4 in Resources */,
+				4E36C5D330A88826007898D2 /* RMC13Global_LOgo_vid.MP4 in Resources */,
+				4E36C5DB30A88A6A007898D2 /* Glory_Production.MP4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +414,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E07D57B30942F880002D7F0 /* Article.swift in Sources */,
-				4E844C3B30945F2D008AD4E5 /* RMC136AZoneDetailView.swift in Sources */,
 				4E844C3930945E68008AD4E5 /* HomeView.swift in Sources */,
+				4E844C3B30945F2D008AD4E5 /* RMC136AZoneDetailView.swift in Sources */,
+				4EA4FC8B309E2200008AD4E5 /* RMC13HeroHeaderView.swift in Sources */,
+				4EA4FC8D309E2300008AD4E5 /* ArtistRecruitmentSectionView.swift in Sources */,
+				4EA4FC91309E2500008AD4E5 /* RMC13MusicHub.swift in Sources */,
+				4EA4FC9310A1F001008AD4E5 /* ProductionInquiryHub.swift in Sources */,
+				4EA4FC9510A2F002008AD4E5 /* HomeServiceDesks.swift in Sources */,
+				4EB1F00110A2F101008AD4E5 /* ProfessionalHeaderBannerView.swift in Sources */,
+				4EB1F00310A2F102008AD4E5 /* RMC13ProductionBannerView.swift in Sources */,
 				4E844C3F30946374008AD4E5 /* MVPRegistrationView.swift in Sources */,
 				4E844C3D30945FCF008AD4E5 /* MVPView.swift in Sources */,
 				4E844C4130946BD3008AD4E5 /* MainTabView.swift in Sources */,
@@ -287,6 +432,13 @@
 				4E844C4930949B02008AD4E5 /* HomeSectionPages.swift in Sources */,
 				4E844C4B3094C100008AD4E5 /* FlashyCarouselView.swift in Sources */,
 				4E844C4D3095D100008AD4E5 /* AppTheme.swift in Sources */,
+				4E844C4F3096E100008AD4E5 /* FeatureStories.swift in Sources */,
+				4E844C513097F100008AD4E5 /* MVP2012SignUp.swift in Sources */,
+				4E844C553098B100008AD4E5 /* SocialStore.swift in Sources */,
+				4E844C573098B200008AD4E5 /* CommunitySocial.swift in Sources */,
+				4E844C59309A0100008AD4E5 /* GameDesigner.swift in Sources */,
+				4EA4FC87309CF100008AD4E5 /* AVHSFootball.swift in Sources */,
+				4EA4FC89309D1100008AD4E5 /* BrandBuild.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,16 +596,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RMC13 News App/Preview Content\"";
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RMC13NEWS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RMC13 uses the camera so you can take a photo or video for a post, story, or reel.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "RMC13 uses the microphone so video you record for a post, story, or reel includes sound.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RMC13 uses your photos and videos so you can post to the feed, stories, and reels.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -461,6 +624,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-News-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -472,16 +636,27 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RMC13 News App/Preview Content\"";
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RMC13NEWS;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSCameraUsageDescription = "RMC13 uses the camera so you can take a photo or video for a post, story, or reel.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "RMC13 uses the microphone so video you record for a post, story, or reel includes sound.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RMC13 uses your photos and videos so you can post to the feed, stories, and reels.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -489,6 +664,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-News-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

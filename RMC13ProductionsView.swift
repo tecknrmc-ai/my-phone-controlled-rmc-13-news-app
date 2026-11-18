@@ -7,24 +7,11 @@ struct RMC13ProductionsView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     RMCBrandTitle(size: 40)
 
-                    Text("RMC13PRoductions")
-                        .font(.title)
-                        .fontWeight(.light)
-                        .foregroundColor(RMCTheme.ivory)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                    PosterTitle(text: "RMC13PRoductions", size: 34, alignment: .center)
 
-                    Image("RMC13_MAin")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 220)
-                        .clipped()
-                        .goldTrim()
+                    FeedPhotoFrame(postKey: "section-productions")
 
-                    Text("Rmc13 reels in millions of viewers with music and entertainment projects")
-                        .font(.title2)
-                        .fontWeight(.light)
-                        .foregroundColor(RMCTheme.ivory)
+                    SharedVideoLaneView(lane: .rmc13)
 
                     Text("RMC13 Productions builds original music, film, game, and live entertainment drops that travel across the RMC13 network. This hub is the front door for reels, premieres, and studio news.")
                         .font(.body)

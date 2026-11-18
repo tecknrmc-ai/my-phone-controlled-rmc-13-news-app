@@ -35,9 +35,7 @@ struct ProfileView: View {
         ScrollView {
             VStack(spacing: 20) {
                 VStack(spacing: 10) {
-                    Image(systemName: session.profileImage)
-                        .font(.system(size: 64))
-                        .foregroundColor(RMCTheme.gold)
+                    ProfileGoldRing(systemImage: session.profileImage, diameter: 96)
 
                     Text(session.username)
                         .font(.title2)
@@ -51,6 +49,10 @@ struct ProfileView: View {
                 .frame(maxWidth: .infinity)
                 .padding()
                 .goldCard()
+
+                ProfileMediaSections()
+                    .padding()
+                    .goldCard()
 
                 VStack(alignment: .leading, spacing: 12) {
                     Text("Account")
