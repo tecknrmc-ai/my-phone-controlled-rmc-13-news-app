@@ -1,5 +1,37 @@
 [
   {
+    "id": "2026-11-17-log-nef-01",
+    "title": "Nef Records Prolific Verse for Season 1 Cypher",
+    "category": "LOG",
+    "summary": "Nef locks a prolific Season 1 Glory cypher verse with arena-ready delivery.",
+    "date": "Nov 17, 2026",
+    "imageURL": "",
+    "imageName": "Nef_Glory_pose",
+    "article": "Nef records a prolific verse for the Season 1 cypher—stacking sharp cadence, stage presence, and Inland Empire fire into a standout Legends of Glory chapter as the battle roster locks in for release.",
+    "kicker": "NEF",
+    "byline": "Glory Desk · Just now",
+    "readTime": "3 min read",
+    "appLink": "glory",
+    "isFeatured": true,
+    "tabs": ["LOG"]
+  },
+  {
+    "id": "2026-11-17-log-bizzy-01",
+    "title": "Bizzybaggz Brings Heavy Street Bears to the Glory Season 1 Battle",
+    "category": "LOG",
+    "summary": "Bizzybaggz rolls into the Season 1 battle with heavy street pressure and cypher force.",
+    "date": "Nov 17, 2026",
+    "imageURL": "",
+    "imageName": "Bizzybaggz_Glory_Artist",
+    "article": "Bizzybaggz brings heavy street bears to the Glory Season 1 battle—opening the Inland Empire cypher lane with raw energy, fast-paced verse work, and battle-ready presence that sets the tone for Legends of Glory.",
+    "kicker": "BIZZYBAGGZ",
+    "byline": "Glory Desk · Just now",
+    "readTime": "3 min read",
+    "appLink": "glory",
+    "isFeatured": true,
+    "tabs": ["LOG"]
+  },
+  {
     "id": "2026-11-17-all-01",
     "title": "RMC13 Daily Wire Is Live — Edit This Card on GitHub Anytime",
     "category": "Culture",
