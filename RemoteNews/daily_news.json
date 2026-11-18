@@ -182,6 +182,23 @@
     "tabs": ["LOG", "All"]
   },
   {
+    "id": "2026-11-18-teckn-skillset-01",
+    "title": "Teckn Shows Extreme Skillset in a Variety of Software and Industry Tools",
+    "category": "Teckn",
+    "summary": "Logic Pro, Adobe Premiere, Mixamo, Hyper 3D, AutoMaya, Unreal Engine, Grok, Gemini, and more.",
+    "date": "Nov 18, 2026",
+    "imageURL": "",
+    "imageName": "Teckn_Main",
+    "article": "Teckn shows extreme skillset in a variety of software and industry tools—Logic Pro, Adobe Premiere, Mixamo, Hyper 3D, AutoMaya, Unreal Engine, Grok, Gemini, and more—stacking audio, film, animation, realtime 3D, and AI workflows into one producer toolkit that powers RMC13 Season 1 campaigns.",
+    "kicker": "MAIN FEATURE",
+    "byline": "Teckn Desk · Just now",
+    "readTime": "4 min read",
+    "appLink": "apps",
+    "isHero": true,
+    "isFeatured": true,
+    "tabs": ["Teckn"]
+  },
+  {
     "id": "2026-11-17-teckn-01",
     "title": "Teckn Producer Desk Adds Live Daily Card Pipeline",
     "category": "Teckn",
