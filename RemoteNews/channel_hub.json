@@ -1,0 +1,453 @@
+{
+  "version": 1,
+  "updated": "2026-11-18",
+  "funFactsStartDate": "2026-11-18",
+  "channels": [
+    {
+      "id": "rmc13",
+      "title": "RMC13 News Channel",
+      "detail": "Full high-definition layout of the RMC13 network newsroom.",
+      "symbol": "dot.radiowaves.left.and.right"
+    },
+    {
+      "id": "rmc136a",
+      "title": "RMC136A News",
+      "detail": "Immersive cluster desk with videos, photos, and daily fun facts.",
+      "symbol": "sparkles"
+    },
+    {
+      "id": "prosports",
+      "title": "Pro Sports",
+      "detail": "Professional sports categories and Pro Players Quick Look.",
+      "symbol": "sportscourt.fill"
+    },
+    {
+      "id": "inland",
+      "title": "Inland Empire",
+      "detail": "San Bernardino–centered immersive regional news desk.",
+      "symbol": "building.2.fill"
+    },
+    {
+      "id": "government",
+      "title": "RMC13 Government News",
+      "detail": "Daily rewritten government wire, GitHub + Google refreshed.",
+      "symbol": "building.columns.fill"
+    }
+  ],
+  "rmc13Cards": [
+    {
+      "id": "ch-music",
+      "title": "Music Desk Keeps Season Catalogs and Video Packages Moving",
+      "kicker": "MUSIC",
+      "summary": "Catalog drops, cyphers, and artist videos stay at the center of the RMC13 channel.",
+      "imageName": "Proof_1"
+    },
+    {
+      "id": "ch-film",
+      "title": "Film Lane Packages Artist Documentaries for Season 1",
+      "kicker": "FILM",
+      "summary": "Preproduction and visual packages lock Season 1 artist documentary lanes.",
+      "imageName": "CA_Film"
+    },
+    {
+      "id": "ch-gaming",
+      "title": "Gaming and RMCVFX Push Interactive Season Builds",
+      "kicker": "GAMING",
+      "summary": "Unreal and VFX pipelines feed RMC13 interactive entertainment.",
+      "imageName": "MVP_Main"
+    },
+    {
+      "id": "ch-ai",
+      "title": "AI Knowledge and Brand Tools Enter the Channel Mix",
+      "kicker": "AI",
+      "summary": "NefsTech AI branding and knowledge desks join the daily channel slate.",
+      "imageName": "RMX13AI_Banner"
+    },
+    {
+      "id": "ch-glory",
+      "title": "Legends of Glory Community Voting Locks Fan Engagement",
+      "kicker": "GLORY",
+      "summary": "Season 1 voting and comments keep the Glory desk interactive.",
+      "imageName": "Glory_Main_img"
+    }
+  ],
+  "rmc136aFunFacts": [
+    {
+      "id": "fact-01",
+      "text": "RMC 136a packs enough stellar firepower to outshine many entire nearby star systems."
+    },
+    {
+      "id": "fact-02",
+      "text": "The cluster sits inside the Tarantula Nebula, one of the brightest star-forming regions we can see."
+    },
+    {
+      "id": "fact-03",
+      "text": "R136a is roughly 163,000 light-years from Earth in the Large Magellanic Cloud."
+    },
+    {
+      "id": "fact-04",
+      "text": "Astronomers shortened RMC 136a to R136a because the original catalog name was a mouthful."
+    },
+    {
+      "id": "fact-05",
+      "text": "R136a1 alone has been measured near 200–300 solar masses depending on the model year."
+    },
+    {
+      "id": "fact-06",
+      "text": "A single R136-class star can drive stellar winds faster than a commercial jet by orders of magnitude."
+    },
+    {
+      "id": "fact-07",
+      "text": "The Wolf–Rayet trio (a1–a3) sits so close that telescopes once blended them into one glare."
+    },
+    {
+      "id": "fact-08",
+      "text": "Ultraviolet light from R136a can ionize surrounding gas for dozens of light-years."
+    },
+    {
+      "id": "fact-09",
+      "text": "If you stood on a hypothetical planet near R136a, night would basically never arrive."
+    },
+    {
+      "id": "fact-10",
+      "text": "R136a4 is still an O-type main-sequence star, not yet in the Wolf–Rayet wind phase."
+    },
+    {
+      "id": "fact-11",
+      "text": "R136a2 burns near 47,000 K—hot enough to make our Sun look orange by comparison."
+    },
+    {
+      "id": "fact-12",
+      "text": "R136a3 is hotter at the surface than both a1 and a2 in many published temperature tables."
+    },
+    {
+      "id": "fact-13",
+      "text": "The Tarantula Nebula’s nickname comes from its spider-like filament patterns in older plates."
+    },
+    {
+      "id": "fact-14",
+      "text": "R136a formed only a couple million years ago—cosmic infancy for stars that massive."
+    },
+    {
+      "id": "fact-15",
+      "text": "Massive stars in R136a will live fast and die young compared with solar-type stars."
+    },
+    {
+      "id": "fact-16",
+      "text": "Some R136 members will likely end as spectacular supernovae or black-hole progenitors."
+    },
+    {
+      "id": "fact-17",
+      "text": "The Large Magellanic Cloud is a satellite galaxy of the Milky Way you can see from the southern sky."
+    },
+    {
+      "id": "fact-18",
+      "text": "Hubble and later JWST imaging helped separate the blinding core of R136 into individual giants."
+    },
+    {
+      "id": "fact-19",
+      "text": "R136a’s core is denser than a typical open cluster by a huge margin."
+    },
+    {
+      "id": "fact-20",
+      "text": "Radiation pressure in R136a is strong enough to sculpt cavities in the surrounding nebula."
+    },
+    {
+      "id": "fact-21",
+      "text": "BAT99 catalog IDs (like BAT99 106 for a3) help cross-match the same stars across surveys."
+    },
+    {
+      "id": "fact-22",
+      "text": "WN5h classification means hydrogen-rich Wolf–Rayet stars still burning core hydrogen."
+    },
+    {
+      "id": "fact-23",
+      "text": "Extreme rotation in young O stars can mix fresh fuel and change their evolutionary path."
+    },
+    {
+      "id": "fact-24",
+      "text": "R136a stars emit most of their light in ultraviolet, not the wavelengths our eyes prefer."
+    },
+    {
+      "id": "fact-25",
+      "text": "Visual brightness understates true luminosity because so much energy is invisible UV."
+    },
+    {
+      "id": "fact-26",
+      "text": "Shockwaves from stellar winds crash into nebular gas and light up emission filaments."
+    },
+    {
+      "id": "fact-27",
+      "text": "The cluster’s gravity well is crowded—stars are separated by tiny fractions of a light-year."
+    },
+    {
+      "id": "fact-28",
+      "text": "Astronomers use spectroscopy to measure wind speeds and temperature without visiting."
+    },
+    {
+      "id": "fact-29",
+      "text": "R136a is a laboratory for testing how the universe’s first giant stars may have behaved."
+    },
+    {
+      "id": "fact-30",
+      "text": "Metal content in the LMC differs from the Milky Way, changing how massive stars evolve."
+    },
+    {
+      "id": "fact-31",
+      "text": "X-ray telescopes catch colliding-wind binaries and hot plasma near the densest cores."
+    },
+    {
+      "id": "fact-32",
+      "text": "If R136a sat where Orion’s Trapezium sits, it would dominate the night sky dramatically."
+    },
+    {
+      "id": "fact-33",
+      "text": "Dust lanes near Tarantula can hide newborn stars still wrapped in birth clouds."
+    },
+    {
+      "id": "fact-34",
+      "text": "Some R136 members lose mass so quickly their radii and spectra change within millennia."
+    },
+    {
+      "id": "fact-35",
+      "text": "Luminosity of millions of Suns means one star can outpower thousands of ordinary suns."
+    },
+    {
+      "id": "fact-36",
+      "text": "Infrared surveys peek through dust to find siblings still forming around the core."
+    },
+    {
+      "id": "fact-37",
+      "text": "The name 30 Doradus marks the Tarantula region as a famous southern sky landmark."
+    },
+    {
+      "id": "fact-38",
+      "text": "Adaptive optics on ground telescopes helped split R136’s glare into named components."
+    },
+    {
+      "id": "fact-39",
+      "text": "Stellar winds from R136a enrich the LMC with heavy elements forged in their cores."
+    },
+    {
+      "id": "fact-40",
+      "text": "Cluster dynamics can eject runaway stars that race across the Magellanic Cloud."
+    },
+    {
+      "id": "fact-41",
+      "text": "R136a proves stars above 100 solar masses can exist, against older upper-mass doubts."
+    },
+    {
+      "id": "fact-42",
+      "text": "Photon pressure near these stars would strip atmospheres from ordinary planets quickly."
+    },
+    {
+      "id": "fact-43",
+      "text": "Polarization studies map magnetic and scattering geometry in the surrounding winds."
+    },
+    {
+      "id": "fact-44",
+      "text": "Time-domain surveys watch brightness changes that hint at eruptions or companions."
+    },
+    {
+      "id": "fact-45",
+      "text": "Comparing a1–a4 side by side shows a sequence from Wolf–Rayet to young O star."
+    },
+    {
+      "id": "fact-46",
+      "text": "R136a’s light travel time means we see the cluster as it was 163,000 years ago."
+    },
+    {
+      "id": "fact-47",
+      "text": "Nebular oxygen and nitrogen lines glow fiercely under R136a’s UV floodlights."
+    },
+    {
+      "id": "fact-48",
+      "text": "Future Extremely Large Telescopes will sharpen individual wind structures in the core."
+    },
+    {
+      "id": "fact-49",
+      "text": "R136a remains a favorite teaching example for extreme star formation in astronomy classes."
+    },
+    {
+      "id": "fact-50",
+      "text": "Every clear southern night, the LMC still hides that blazing nursery of giant stars."
+    }
+  ],
+  "proPlayers": [
+    {
+      "id": "lebron",
+      "name": "LeBron James",
+      "section": "NBA Legacy",
+      "imageName": "",
+      "blurb": "From Akron to four championships across three franchises, LeBron built a two-decade peak of scoring, playmaking, and longevity that reset what a modern superstar career can look like."
+    },
+    {
+      "id": "mj",
+      "name": "Michael Jordan",
+      "section": "NBA Legacy",
+      "imageName": "",
+      "blurb": "Six titles, five MVPs, and a global brand boom made Jordan the template for clutch scoring excellence and competitive myth-making in the 1990s Bulls dynasty."
+    },
+    {
+      "id": "kobe",
+      "name": "Kobe Bryant",
+      "section": "NBA Legacy",
+      "imageName": "",
+      "blurb": "Five championships with the Lakers and a craftsman’s obsession with footwork turned Kobe into a generation’s definition of relentless midrange mastery."
+    },
+    {
+      "id": "drj",
+      "name": "Julius Erving",
+      "section": "ABA / NBA Pioneer",
+      "imageName": "",
+      "blurb": "Dr. J brought above-the-rim artistry from the ABA into the NBA, winning titles and helping popularize the modern aerial style of basketball showmanship."
+    },
+    {
+      "id": "shaq",
+      "name": "Shaquille O'Neal",
+      "section": "NBA Legacy",
+      "imageName": "",
+      "blurb": "A dominant paint force with four titles, Shaq paired overwhelming size with personality, rewriting how centers controlled playoff series in the 2000s."
+    },
+    {
+      "id": "curry",
+      "name": "Stephen Curry",
+      "section": "NBA Revolution",
+      "imageName": "",
+      "blurb": "Multiple championships and a three-point revolution later, Curry changed spacing, shot selection, and youth basketball worldwide from the Golden State engine."
+    },
+    {
+      "id": "kd",
+      "name": "Kevin Durant",
+      "section": "NBA Scoring",
+      "imageName": "",
+      "blurb": "A 7-foot scorer with guard skills, Durant collected titles and scoring crowns while proving size and shooting can fuse into unstoppable isolation basketball."
+    }
+  ],
+  "proSportsCategories": [
+    {
+      "id": "nba",
+      "title": "NBA",
+      "detail": "Pro hoops championships, scoring races, and legacy careers.",
+      "imageName": "AHS_Football_League"
+    },
+    {
+      "id": "nfl",
+      "title": "NFL",
+      "detail": "Football Sundays, playoff runs, and franchise storylines.",
+      "imageName": "Teckn_MVP"
+    },
+    {
+      "id": "mlb",
+      "title": "MLB",
+      "detail": "Baseball seasons, October baseball, and franchise rebuilds.",
+      "imageName": "RMC13_MAin"
+    },
+    {
+      "id": "nhl",
+      "title": "NHL",
+      "detail": "Hockey rivalries, Stanley Cup lanes, and star forwards.",
+      "imageName": "RMC13_Banner"
+    },
+    {
+      "id": "soccer",
+      "title": "Soccer",
+      "detail": "Global football leagues, cups, and breakout strikers.",
+      "imageName": "Glory_Main_img"
+    },
+    {
+      "id": "combat",
+      "title": "Combat Sports",
+      "detail": "Boxing and MMA title fights and training camps.",
+      "imageName": "CashChamp_field"
+    }
+  ],
+  "inlandEmpireCards": [
+    {
+      "id": "ie-teckn",
+      "title": "Teckn Keeps San Bernardino Production Lanes Moving",
+      "kicker": "TECKN",
+      "summary": "Studio, film, and campaign work from Teckn continues to anchor Inland Empire Season rollouts.",
+      "imageName": "Teckn_Main",
+      "article": "Teckn’s Inland Empire desk keeps music, film, and campaign production cycling through San Bernardino pipelines—feeding RMC13 Season packages with local craft and statewide reach."
+    },
+    {
+      "id": "ie-bizzy",
+      "title": "Bizzybaggz Puts IE Battle Energy on the Glory Stage",
+      "kicker": "BIZZYBAGGZ",
+      "summary": "Bizzybaggz carries San Bernardino street cadence into Legends of Glory Season 1.",
+      "imageName": "Bizzybaggz_Glory_Artist",
+      "article": "Bizzybaggz represents Inland Empire battle heat on the Glory Season 1 stage—fast verses, local identity, and community buzz tied back to San Bernardino roots."
+    },
+    {
+      "id": "ie-tunez",
+      "title": "HotTunez Lights IE Visual Drops Across Season Campaigns",
+      "kicker": "HOTTUNEZ",
+      "summary": "HotTunez keeps Inland Empire music-video momentum loud across RMC13 releases.",
+      "imageName": "Like_me_Hottunez_4",
+      "article": "HotTunez pushes Inland Empire visuals and mixtape energy through Season campaigns—keeping San Bernardino voices visible from local sets to wider California screens."
+    },
+    {
+      "id": "ie-harman",
+      "title": "Harman Bridges IE Sets to Los Angeles Viewership Peaks",
+      "kicker": "HARMAN",
+      "summary": "Harman’s collaborations turn Inland Empire production into multi-market viewership wins.",
+      "imageName": "Harman_Scene_group",
+      "article": "Harman’s Scene and Parchey runs show how Inland Empire production can travel—San Bernardino craft meeting Los Angeles corridors for massive streaming and viewership spikes."
+    },
+    {
+      "id": "ie-city",
+      "title": "San Bernardino City Desk Tracks Community Rebuild Stories",
+      "kicker": "CITY",
+      "summary": "City-desk coverage follows downtown projects, neighborhood programs, and civic updates.",
+      "imageName": "RMC13_MAin",
+      "article": "The Inland Empire city desk centers San Bernardino community updates—redevelopment talk, neighborhood programs, and civic stories that shape daily life across the IE."
+    },
+    {
+      "id": "ie-school",
+      "title": "IE School Lanes Spotlight Student Athletes and Campus Creators",
+      "kicker": "SCHOOLS",
+      "summary": "Campus sports, arts, and creator pipelines remain a core Inland Empire news lane.",
+      "imageName": "Teckn_MVP",
+      "article": "School news across the Inland Empire highlights student athletes, campus creators, and education pipelines that feed both sports and entertainment futures in San Bernardino County."
+    },
+    {
+      "id": "ie-crime",
+      "title": "Public Safety Briefs Stay Part of the IE Daily Wire",
+      "kicker": "PUBLIC SAFETY",
+      "summary": "Local public-safety briefs are tracked carefully with community-impact framing.",
+      "imageName": "RMC13_Banner",
+      "article": "Inland Empire public-safety coverage focuses on clear community-impact briefs—what residents need to know—without turning San Bernardino’s story into a single headline stereotype."
+    },
+    {
+      "id": "ie-top",
+      "title": "Top IE Wire: Culture, Sport, and Season Entertainment Collide",
+      "kicker": "TOP WIRE",
+      "summary": "The top Inland Empire wire mixes culture, sports, and RMC13 Season entertainment news.",
+      "imageName": "Glory_Main_img",
+      "article": "The top Inland Empire wire stitches culture, sports, and Season entertainment into one regional desk—always circling back to San Bernardino as the creative and community center of gravity."
+    }
+  ],
+  "governmentSeedCards": [
+    {
+      "id": "gov-1",
+      "title": "Capitol Briefs Track Policy Moves Shaping National Security Lanes",
+      "kicker": "POLICY",
+      "summary": "Daily government briefs reframe major policy headlines for RMC13 readers."
+    },
+    {
+      "id": "gov-2",
+      "title": "Defense Desk Watches Alliance Coordination and Readiness Updates",
+      "kicker": "DEFENSE",
+      "summary": "Alliance and readiness notes are rewritten into clear channel language."
+    },
+    {
+      "id": "gov-3",
+      "title": "Border and Trade Notes Surface in Rewritten Wire Form",
+      "kicker": "TRADE",
+      "summary": "Trade and border developments are summarized without copying wire phrasing."
+    }
+  ],
+  "governmentGoogleQuery": "US government Congress White House policy when:1d",
+  "governmentMaxDaily": 10
+}
