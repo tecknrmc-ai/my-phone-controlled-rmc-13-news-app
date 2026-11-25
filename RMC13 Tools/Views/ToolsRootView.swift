@@ -2,21 +2,19 @@ import SwiftUI
 
 struct ToolsRootView: View {
     @State private var session = StudioSession()
+    @State private var splash = SplashModel()
     @State private var showSplash = true
 
     var body: some View {
         ZStack {
-            ToolsMainTabView()
-                .environment(session)
-                .allowsHitTesting(!showSplash)
             if showSplash {
-                SplashSequenceView {
-                    withAnimation(.easeOut(duration: 0.35)) {
-                        showSplash = false
-                    }
+                SplashSequenceView(model: splash) {
+                    showSplash = false
                 }
-                .transition(.opacity)
                 .zIndex(1)
+            } else {
+                ToolsMainTabView()
+                    .environment(session)
             }
         }
         .preferredColorScheme(.dark)

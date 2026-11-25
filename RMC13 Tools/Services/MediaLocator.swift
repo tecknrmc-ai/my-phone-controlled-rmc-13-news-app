@@ -29,8 +29,16 @@ enum MediaLocator {
     }
 
     static func videoURL(candidates: [String]) -> URL? {
+        let folders: [String?] = [nil, "Videos", "Assets/Videos"]
         for name in candidates {
-            if let url = url(for: name, extensions: ["mp4", "mov", "m4v"], subdirectories: [nil, "Videos", "Assets/Videos"]) {
+            if let url = url(for: name, extensions: ["mp4", "mov", "m4v"], subdirectories: folders) {
+                return url
+            }
+        }
+        let wanted = Set(candidates.map { $0.lowercased() })
+        for folder in folders {
+            let matches = Bundle.main.urls(forResourcesWithExtension: "mp4", subdirectory: folder) ?? []
+            if let url = matches.first(where: { wanted.contains($0.deletingPathExtension().lastPathComponent.lowercased()) }) {
                 return url
             }
         }

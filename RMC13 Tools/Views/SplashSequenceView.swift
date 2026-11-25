@@ -1,3 +1,4 @@
+import AVFoundation
 import AVKit
 import SwiftUI
 import UIKit
@@ -30,6 +31,15 @@ enum ToolsOrientation {
     }
 }
 
+final class ToolsAppDelegate: NSObject, UIApplicationDelegate {
+    func application(
+        _ application: UIApplication,
+        supportedInterfaceOrientationsFor window: UIWindow?
+    ) -> UIInterfaceOrientationMask {
+        ToolsOrientation.current()
+    }
+}
+
 @MainActor
 @Observable
 final class SplashModel {
@@ -40,88 +50,81 @@ final class SplashModel {
     @ObservationIgnored private var loadedItem: AVPlayerItem?
     @ObservationIgnored private var watch: Task<Void, Never>?
     @ObservationIgnored private var onFinished: () -> Void = {}
+    @ObservationIgnored private var started = false
+    @ObservationIgnored private var didFinish = false
 
     func start(onFinished: @escaping () -> Void) {
-        guard watch == nil else { return }
         self.onFinished = onFinished
+        guard !started else { return }
+        started = true
+        let audio = AVAudioSession.sharedInstance()
+        try? audio.setCategory(.playback, mode: .moviePlayback)
+        try? audio.setActive(true)
         ToolsOrientation.set(.portrait)
         playBlast()
-    }
-
-    func teardown() {
-        watch?.cancel()
-        player?.pause()
-        player = nil
     }
 
     private func playBlast() {
         phase = .blast
         turnedSideways = false
-        let url = MediaLocator.videoURL(candidates: ["RMXAI_Blast_logo", "RMXAI_Blast_Logo", "RMXAIBlastLogo"])
-        play(url: url, fallback: 5.2, turnAfter: 2.1, advance: .tester)
-    }
-
-    private func playTester() {
-        phase = .tester
-        turnedSideways = true
-        ToolsOrientation.set(.landscapeRight)
-        let url = MediaLocator.videoURL(candidates: ["RMC_AppTester_Logo", "RMC_AppTester_logo", "RMC13_apptesters_logo_vid"])
-        play(url: url, fallback: 4.8, turnAfter: nil, advance: .done)
-    }
-
-    private func finish() {
-        watch?.cancel()
-        player?.pause()
-        ToolsOrientation.set(.portrait)
-        Task { @MainActor in
-            try? await Task.sleep(for: .milliseconds(450))
-            onFinished()
+        let blast = MediaLocator.videoURL(candidates: ["RMXAI_Blast_logo", "RMXAI_Blast_Logo", "RMXAIBlastLogo"])
+        let tester = MediaLocator.videoURL(candidates: ["RMC_AppTester_Logo", "RMC_AppTester_logo", "RMC13_apptesters_logo_vid"])
+        watch = Task { @MainActor in
+            await self.play(url: blast, minimum: 5.2, turnAfter: 2.1)
+            guard !Task.isCancelled else { return }
+            self.phase = .tester
+            self.turnedSideways = true
+            ToolsOrientation.set(.landscapeRight)
+            await self.play(url: tester, minimum: 4.8, turnAfter: nil)
+            guard !Task.isCancelled else { return }
+            self.finish()
         }
     }
 
-    private enum Advance: Sendable {
-        case tester
-        case done
+    private func finish() {
+        guard !didFinish else { return }
+        didFinish = true
+        watch?.cancel()
+        watch = nil
+        player?.pause()
+        let done = onFinished
+        onFinished = {}
+        done()
+        ToolsOrientation.set(.portrait)
     }
 
-    private func play(url: URL?, fallback: TimeInterval, turnAfter: TimeInterval?, advance: Advance) {
-        watch?.cancel()
+    private func play(url: URL?, minimum: TimeInterval, turnAfter: TimeInterval?) async {
         videoFailed = url == nil
         let item = url.map { AVPlayerItem(url: $0) }
         loadedItem = item
         let player = AVPlayer(playerItem: item)
         player.isMuted = false
         self.player = player
-        if url != nil { player.play() }
-        let started = Date()
+        if url != nil {
+            player.play()
+        }
+        let startedAt = Date()
         let missingVideo = url == nil
-        watch = Task { @MainActor in
-            var didTurn = turnAfter == nil
-            while !Task.isCancelled {
-                try? await Task.sleep(for: .milliseconds(100))
-                let elapsed = Date().timeIntervalSince(started)
-                if let turnAfter, !didTurn, elapsed >= turnAfter {
-                    didTurn = true
-                    self.turnedSideways = true
-                    ToolsOrientation.set(.landscapeRight)
-                }
-                let current = self.loadedItem
-                if current?.status == .failed {
-                    self.videoFailed = true
-                }
-                let seconds = current?.currentTime().seconds ?? 0
-                let length = current?.duration.seconds ?? .nan
-                let reachedEnd = length.isFinite && seconds >= max(0, length - 0.15)
-                let timedOut = elapsed >= fallback + 0.35
-                if reachedEnd || timedOut || (missingVideo && elapsed >= fallback) {
-                    switch advance {
-                    case .tester:
-                        self.playTester()
-                    case .done:
-                        self.finish()
-                    }
-                    break
-                }
+        var didTurn = turnAfter == nil
+        while !Task.isCancelled {
+            try? await Task.sleep(for: .milliseconds(100))
+            let elapsed = Date().timeIntervalSince(startedAt)
+            if let turnAfter, !didTurn, elapsed >= turnAfter {
+                didTurn = true
+                self.turnedSideways = true
+                ToolsOrientation.set(.landscapeRight)
+            }
+            let current = self.loadedItem
+            if current?.status == .failed {
+                self.videoFailed = true
+            }
+            let seconds = current?.currentTime().seconds ?? 0
+            let length = current?.duration.seconds ?? .nan
+            let reachedEnd = length.isFinite && length > 0 && seconds >= max(0, length - 0.12)
+            let playedLongEnough = elapsed >= minimum && (missingVideo || self.videoFailed || reachedEnd)
+            let timedOut = elapsed >= minimum + 2
+            if playedLongEnough || timedOut {
+                return
             }
         }
     }
@@ -133,8 +136,8 @@ enum SplashPhase: Equatable {
 }
 
 struct SplashSequenceView: View {
+    var model: SplashModel
     var onFinished: () -> Void
-    @State private var model = SplashModel()
     @Environment(\.verticalSizeClass) private var verticalSizeClass
 
     var body: some View {
@@ -162,7 +165,6 @@ struct SplashSequenceView: View {
         .background(Color.black)
         .statusBarHidden(true)
         .onAppear { model.start(onFinished: onFinished) }
-        .onDisappear { model.teardown() }
     }
 
     private var fallback: some View {
@@ -197,6 +199,7 @@ struct SplashPlayerView: UIViewControllerRepresentable {
     func updateUIViewController(_ controller: AVPlayerViewController, context: Context) {
         if controller.player !== player {
             controller.player = player
+            controller.player?.play()
         }
     }
 }
