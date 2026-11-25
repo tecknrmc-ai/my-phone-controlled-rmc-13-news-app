@@ -4,9 +4,10 @@ import Foundation
 enum ToolsLogicCheck {
     static func main() {
         let beats = MockCatalog.beats
-        precondition(beats.count >= 6, "expected 6+ beats, got \(beats.count)")
+        precondition(beats.count == 25, "expected the desktop beat folder, got \(beats.count)")
+        precondition(beats.first?.title == "Breakneck Halo 2")
         precondition(MockCatalog.news.count >= 4, "expected 4+ news posts")
-        precondition(StudioLogic.rowBeats(beats).count == 5, "home row should show 5 beats")
+        precondition(StudioLogic.rowBeats(beats).count == 5, "preview helper still returns 5")
         precondition(Set(StudioLogic.rowBeats(beats).map(\.id)).count == 5)
 
         let free = StudioLogic.filteredBeats(beats, query: "", genre: .all, bpm: 70...180, freeOnly: true)
@@ -15,14 +16,14 @@ enum ToolsLogicCheck {
 
         let trap = StudioLogic.filteredBeats(beats, query: "", genre: .trap, bpm: 70...180, freeOnly: false)
         precondition(trap.allSatisfy { $0.genre == .trap && !$0.title.isEmpty })
-        precondition(trap.contains { $0.title == "Midnight Voltage" })
+        precondition(trap.contains { $0.title == "Breakneck Halo 2" })
 
         let slow = StudioLogic.filteredBeats(beats, query: "", genre: .all, bpm: 80...100, freeOnly: false)
-        precondition(slow.contains { $0.title == "Silk Hour" })
+        precondition(slow.contains { $0.title == "High Class Highlight" })
         precondition(!slow.contains { $0.bpm > 100 })
 
-        let search = StudioLogic.filteredBeats(beats, query: "lagos", genre: .all, bpm: 70...180, freeOnly: false)
-        precondition(search.count == 1 && search[0].id == "lagos-after-dark")
+        let search = StudioLogic.filteredBeats(beats, query: "bhangra", genre: .all, bpm: 70...180, freeOnly: false)
+        precondition(search.count == 1 && search[0].id == "desert-freeway-bhangra")
 
         precondition(StudioLogic.passwordError(currentInput: "nope", stored: "studio13", newPassword: "newpass123", confirm: "newpass123") != nil)
         precondition(StudioLogic.passwordError(currentInput: "studio13", stored: "studio13", newPassword: "short", confirm: "short") != nil)

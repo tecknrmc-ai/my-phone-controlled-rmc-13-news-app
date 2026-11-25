@@ -94,8 +94,8 @@ struct ToolsHomeView: View {
             .padding(.horizontal, 16)
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 14) {
-                    ForEach(session.rowBeats) { beat in
-                        BeatCardView(beat: beat, queue: session.rowBeats)
+                    ForEach(session.catalog) { beat in
+                        BeatCardView(beat: beat, queue: session.catalog)
                             .frame(width: 220)
                     }
                 }

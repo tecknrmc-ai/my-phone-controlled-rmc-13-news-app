@@ -17,13 +17,22 @@ enum MediaLocator {
     }
 
     static func audioURL(named name: String, preferredExtension: String) -> URL? {
+        let decoded = name.removingPercentEncoding ?? name
+        let encoded = decoded.addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? decoded
+        var names: [String] = []
+        for candidate in [name, decoded, encoded] where !names.contains(candidate) {
+            names.append(candidate)
+        }
         let ordered = [preferredExtension, "mp3", "wav", "m4a"]
         var seen: [String] = []
-        for ext in ordered where !seen.contains(ext) {
-            seen.append(ext)
-            if let url = url(for: name, extensions: [ext]) {
-                return url
+        for candidate in names {
+            for ext in ordered where !seen.contains(ext) {
+                seen.append(ext)
+                if let url = url(for: candidate, extensions: [ext], subdirectories: [nil, "Beats", "Assets/Beats", "Rmc news beats"]) {
+                    return url
+                }
             }
+            seen.removeAll()
         }
         return nil
     }
