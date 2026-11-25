@@ -13,8 +13,6 @@ final class ToolsAppDelegate: NSObject, UIApplicationDelegate {
 @main
 struct RMC13ToolsApp: App {
     @UIApplicationDelegateAdaptor(ToolsAppDelegate.self) private var appDelegate
-    @State private var session = StudioSession()
-    @State private var showSplash = true
 
     init() {
         StudioTheme.configureChrome()
@@ -22,21 +20,7 @@ struct RMC13ToolsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ZStack {
-                MainTabView()
-                    .environment(session)
-                    .allowsHitTesting(!showSplash)
-                if showSplash {
-                    SplashSequenceView {
-                        withAnimation(.easeOut(duration: 0.35)) {
-                            showSplash = false
-                        }
-                    }
-                    .transition(.opacity)
-                    .zIndex(1)
-                }
-            }
-            .preferredColorScheme(.dark)
+            ToolsRootView()
         }
     }
 }

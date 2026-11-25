@@ -2,7 +2,7 @@ import PhotosUI
 import SwiftUI
 import UIKit
 
-struct ProfileView: View {
+struct ToolsProfileView: View {
     @Environment(StudioSession.self) private var session
     @State private var filter: VaultFilter = .all
     @State private var photoItem: PhotosPickerItem?
@@ -192,6 +192,6 @@ struct ProfileView: View {
 }
 
 #Preview {
-    ProfileView()
+    ToolsProfileView()
         .environment(StudioSession.preview)
 }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct MainTabView: View {
+struct ToolsMainTabView: View {
     @Environment(StudioSession.self) private var session
 
     var body: some View {
@@ -8,7 +8,7 @@ struct MainTabView: View {
             get: { session.selectedTab },
             set: { session.selectedTab = $0 }
         )) {
-            HomeView()
+            ToolsHomeView()
                 .tabItem { Label(ToolsTab.home.title, systemImage: ToolsTab.home.symbol) }
                 .tag(ToolsTab.home)
             BeatsView()
@@ -17,7 +17,7 @@ struct MainTabView: View {
             PressReleaseView()
                 .tabItem { Label(ToolsTab.press.title, systemImage: ToolsTab.press.symbol) }
                 .tag(ToolsTab.press)
-            ProfileView()
+            ToolsProfileView()
                 .tabItem { Label(ToolsTab.profile.title, systemImage: ToolsTab.profile.symbol) }
                 .tag(ToolsTab.profile)
         }
@@ -49,6 +49,6 @@ struct MainTabView: View {
 }
 
 #Preview {
-    MainTabView()
+    ToolsMainTabView()
         .environment(StudioSession.preview)
 }

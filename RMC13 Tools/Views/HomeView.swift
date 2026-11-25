@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView: View {
+struct ToolsHomeView: View {
     @Environment(StudioSession.self) private var session
     @State private var category: NewsCategory = .all
     @State private var selectedPost: NewsPost?
@@ -202,6 +202,6 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    ToolsHomeView()
         .environment(StudioSession.preview)
 }

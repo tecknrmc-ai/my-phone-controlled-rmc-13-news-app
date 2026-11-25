@@ -57,6 +57,18 @@
 		4E844C4C3095D100008AD4E5 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A13B0015000000000000000A /* Exceptions for "RMC13 Tools" folder in "RMC13 News App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				RMC13ToolsApp.swift,
+				Assets.xcassets/AppIcon.appiconset,
+				Assets.xcassets/AccentColor.colorset,
+			);
+			target = 4E07D54A30942F260002D7F0 /* RMC13 News App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4E07D54D30942F260002D7F0 /* RMC13 News App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
@@ -75,6 +87,9 @@
 		};
 		A13B00150000000000000002 /* RMC13 Tools */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A13B0015000000000000000A /* Exceptions for "RMC13 Tools" folder in "RMC13 News App" target */,
+			);
 			path = "RMC13 Tools";
 			sourceTree = "<group>";
 		};
@@ -163,6 +178,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				4E07D54D30942F260002D7F0 /* RMC13 News App */,
+				A13B00150000000000000002 /* RMC13 Tools */,
 			);
 			name = "RMC13 News App";
 			packageProductDependencies = (
