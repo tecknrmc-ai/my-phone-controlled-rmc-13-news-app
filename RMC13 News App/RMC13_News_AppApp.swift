@@ -2,15 +2,15 @@ import SwiftUI
 
 @main
 struct RMC13_News_AppApp: App {
+    @UIApplicationDelegateAdaptor(ToolsAppDelegate.self) private var appDelegate
+
     init() {
-        RMCTheme.configureChrome()
+        StudioTheme.configureChrome()
     }
 
     var body: some Scene {
         WindowGroup {
-            MainTabView()
-                .preferredColorScheme(.dark)
-                .tint(RMCTheme.gold)
+            ContentView()
         }
     }
 }
