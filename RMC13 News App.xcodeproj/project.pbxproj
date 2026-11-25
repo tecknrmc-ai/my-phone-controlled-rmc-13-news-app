@@ -61,7 +61,8 @@
 		A13B0015000000000000000A /* Exceptions for "RMC13 Tools" folder in "RMC13 News App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				RMC13ToolsApp.swift,
+				RMC13_ToolsApp.swift,
+				ContentView.swift,
 				Assets.xcassets/AppIcon.appiconset,
 				Assets.xcassets/AccentColor.colorset,
 			);

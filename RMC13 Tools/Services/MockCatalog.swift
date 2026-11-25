@@ -23,7 +23,7 @@ enum MockCatalog {
             price: Decimal(string: "29.99") ?? 29.99,
             tags: ["dark", "808", "night", "exclusive"],
             artworkName: "MidnightVoltage",
-            audioName: "MidnightVoltage",
+            audioName: "Trap Cypher Banger",
             summary: "A late-night trap drop with glassy leads and a rolling 808 pocket.",
             isFeatured: true
         ),
@@ -37,7 +37,7 @@ enum MockCatalog {
             price: Decimal(string: "49.99") ?? 49.99,
             tags: ["smooth", "keys", "vocals", "night"],
             artworkName: "SilkHour",
-            audioName: "SilkHour",
+            audioName: "High Class Highlight",
             summary: "Warm Rhodes, soft drums, and space left for a lead vocal.",
             isFeatured: true
         ),
@@ -51,7 +51,7 @@ enum MockCatalog {
             price: 0,
             tags: ["free", "slide", "street", "drill"],
             artworkName: "BlockPrayer",
-            audioName: "BlockPrayer",
+            audioName: "Back Door Cipher",
             summary: "A free drill starter with sliding bass and a tight hat pattern.",
             isFeatured: true
         ),
@@ -65,7 +65,7 @@ enum MockCatalog {
             price: Decimal(string: "29.99") ?? 29.99,
             tags: ["boom bap", "sample", "gold"],
             artworkName: "GoldRoom",
-            audioName: "GoldRoom",
+            audioName: "Clock Hands to the Floor",
             summary: "Dusty chops over a head-nod pocket built for verses.",
             isFeatured: false
         ),
@@ -79,7 +79,7 @@ enum MockCatalog {
             price: Decimal(string: "39.99") ?? 39.99,
             tags: ["log drum", "dance", "sunset"],
             artworkName: "LagosAfterDark",
-            audioName: "LagosAfterDark",
+            audioName: "Midnight Cypher Chase",
             summary: "Percussion-forward afrobeats with a chorus that lifts on the two.",
             isFeatured: true
         ),
@@ -93,7 +93,7 @@ enum MockCatalog {
             price: 0,
             tags: ["free", "alt", "texture"],
             artworkName: "VelvetStatic",
-            audioName: "VelvetStatic",
+            audioName: "Night Count",
             summary: "A free alt-R&B sketch with airy pads and a slow kick.",
             isFeatured: false
         ),
@@ -107,7 +107,7 @@ enum MockCatalog {
             price: Decimal(string: "49.99") ?? 49.99,
             tags: ["anthem", "roof", "festival"],
             artworkName: "RoofSermon",
-            audioName: "RoofSermon",
+            audioName: "High Level Trap Run",
             summary: "Big-room trap written for a rooftop video and a last chorus.",
             isFeatured: false
         ),
@@ -121,7 +121,7 @@ enum MockCatalog {
             price: Decimal(string: "29.99") ?? 29.99,
             tags: ["metallic", "bounce", "club"],
             artworkName: "ChromeHalo",
-            audioName: "ChromeHalo",
+            audioName: "Run It Like Money",
             summary: "Chrome-bright synths and a bounce pattern that sits forward.",
             isFeatured: false
         )

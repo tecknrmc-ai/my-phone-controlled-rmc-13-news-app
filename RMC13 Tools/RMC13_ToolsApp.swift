@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct RMC13ToolsApp: App {
+struct RMC13_ToolsApp: App {
     @UIApplicationDelegateAdaptor(ToolsAppDelegate.self) private var appDelegate
 
     init() {
@@ -10,7 +10,7 @@ struct RMC13ToolsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ToolsRootView()
+            ContentView()
         }
     }
 }

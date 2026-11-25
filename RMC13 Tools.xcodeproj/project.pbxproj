@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E6BC36030B65869007527AF /* Trap Cypher Banger 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35E30B65869007527AF /* Trap Cypher Banger 2.wav */; };
+		4E6BC36130B65869007527AF /* Throne In The Chaos.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35C30B65869007527AF /* Throne In The Chaos.wav */; };
+		4E6BC36230B65869007527AF /* Cold Night Come-Up 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34D30B65869007527AF /* Cold Night Come-Up 2.mp3 */; };
+		4E6BC36330B65869007527AF /* Back Door Cipher.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34630B65869007527AF /* Back Door Cipher.wav */; };
+		4E6BC36430B65869007527AF /* High Class Highlight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34F30B65869007527AF /* High Class Highlight.mp3 */; };
+		4E6BC36530B65869007527AF /* Trap Cypher Banger.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35D30B65869007527AF /* Trap Cypher Banger.wav */; };
+		4E6BC36630B65869007527AF /* Night Count.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35830B65869007527AF /* Night Count.wav */; };
+		4E6BC36730B65869007527AF /* High Level Trap Run.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35030B65869007527AF /* High Level Trap Run.wav */; };
+		4E6BC36830B65869007527AF /* Clock Hands to the Floor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34A30B65869007527AF /* Clock Hands to the Floor.mp3 */; };
+		4E6BC36930B65869007527AF /* Midnight Cypher Chase 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35430B65869007527AF /* Midnight Cypher Chase 2.mp3 */; };
+		4E6BC36A30B65869007527AF /* Breakneck Halo 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34830B65869007527AF /* Breakneck Halo 2.mp3 */; };
+		4E6BC36B30B65869007527AF /* Breakneck Halo 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34930B65869007527AF /* Breakneck Halo 3.mp3 */; };
+		4E6BC36C30B65869007527AF /* Midnight Cypher Chase.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35330B65869007527AF /* Midnight Cypher Chase.mp3 */; };
+		4E6BC36D30B65869007527AF /* Desert Freeway Bhangra.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34E30B65869007527AF /* Desert Freeway Bhangra.mp3 */; };
+		4E6BC36E30B65869007527AF /* Run It Like Money.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35930B65869007527AF /* Run It Like Money.mp3 */; };
+		4E6BC36F30B65869007527AF /* Cold Night Come-Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34C30B65869007527AF /* Cold Night Come-Up.mp3 */; };
+		4E6BC37030B65869007527AF /* Clock Hands to the Floor 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34B30B65869007527AF /* Clock Hands to the Floor 2.mp3 */; };
+		4E6BC37130B65869007527AF /* Next Level Voltage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35730B65869007527AF /* Next Level Voltage.wav */; };
+		4E6BC37230B65869007527AF /* Midnight Sprint 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35630B65869007527AF /* Midnight Sprint 2.mp3 */; };
+		4E6BC37330B65869007527AF /* Run It Up Again 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35A30B65869007527AF /* Run It Up Again 3.mp3 */; };
+		4E6BC37430B65869007527AF /* Stadium Stampede 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35B30B65869007527AF /* Stadium Stampede 3.mp3 */; };
+		4E6BC37530B65869007527AF /* Block Ring Cypher 2.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC34730B65869007527AF /* Block Ring Cypher 2.wav */; };
+		4E6BC37630B65869007527AF /* Midnight Sprint.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35530B65869007527AF /* Midnight Sprint.mp3 */; };
+		4E6BC37730B65869007527AF /* High-Rise Flex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35130B65869007527AF /* High-Rise Flex.mp3 */; };
+		4E6BC37830B65869007527AF /* Late Night Cypher.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4E6BC35230B65869007527AF /* Late Night Cypher.wav */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E6BC32A30B6582B007527AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6BC31130B65822007527AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E6BC31830B65822007527AF;
+			remoteInfo = "RMC13 Tools";
+		};
+		4E6BC33430B6582C007527AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E6BC31130B65822007527AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E6BC31830B65822007527AF;
+			remoteInfo = "RMC13 Tools";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E6BC31930B65822007527AF /* RMC13 Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RMC13 Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6BC32930B6582B007527AF /* RMC13 ToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMC13 ToolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6BC33330B6582C007527AF /* RMC13 ToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "RMC13 ToolsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E6BC34630B65869007527AF /* Back Door Cipher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Back Door Cipher.wav"; sourceTree = "<group>"; };
+		4E6BC34730B65869007527AF /* Block Ring Cypher 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Block Ring Cypher 2.wav"; sourceTree = "<group>"; };
+		4E6BC34830B65869007527AF /* Breakneck Halo 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breakneck Halo 2.mp3"; sourceTree = "<group>"; };
+		4E6BC34930B65869007527AF /* Breakneck Halo 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Breakneck Halo 3.mp3"; sourceTree = "<group>"; };
+		4E6BC34A30B65869007527AF /* Clock Hands to the Floor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Clock Hands to the Floor.mp3"; sourceTree = "<group>"; };
+		4E6BC34B30B65869007527AF /* Clock Hands to the Floor 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Clock Hands to the Floor 2.mp3"; sourceTree = "<group>"; };
+		4E6BC34C30B65869007527AF /* Cold Night Come-Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cold Night Come-Up.mp3"; sourceTree = "<group>"; };
+		4E6BC34D30B65869007527AF /* Cold Night Come-Up 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Cold Night Come-Up 2.mp3"; sourceTree = "<group>"; };
+		4E6BC34E30B65869007527AF /* Desert Freeway Bhangra.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Desert Freeway Bhangra.mp3"; sourceTree = "<group>"; };
+		4E6BC34F30B65869007527AF /* High Class Highlight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "High Class Highlight.mp3"; sourceTree = "<group>"; };
+		4E6BC35030B65869007527AF /* High Level Trap Run.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "High Level Trap Run.wav"; sourceTree = "<group>"; };
+		4E6BC35130B65869007527AF /* High-Rise Flex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "High-Rise Flex.mp3"; sourceTree = "<group>"; };
+		4E6BC35230B65869007527AF /* Late Night Cypher.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Late Night Cypher.wav"; sourceTree = "<group>"; };
+		4E6BC35330B65869007527AF /* Midnight Cypher Chase.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Midnight Cypher Chase.mp3"; sourceTree = "<group>"; };
+		4E6BC35430B65869007527AF /* Midnight Cypher Chase 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Midnight Cypher Chase 2.mp3"; sourceTree = "<group>"; };
+		4E6BC35530B65869007527AF /* Midnight Sprint.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Midnight Sprint.mp3"; sourceTree = "<group>"; };
+		4E6BC35630B65869007527AF /* Midnight Sprint 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Midnight Sprint 2.mp3"; sourceTree = "<group>"; };
+		4E6BC35730B65869007527AF /* Next Level Voltage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Next Level Voltage.wav"; sourceTree = "<group>"; };
+		4E6BC35830B65869007527AF /* Night Count.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Night Count.wav"; sourceTree = "<group>"; };
+		4E6BC35930B65869007527AF /* Run It Like Money.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Run It Like Money.mp3"; sourceTree = "<group>"; };
+		4E6BC35A30B65869007527AF /* Run It Up Again 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Run It Up Again 3.mp3"; sourceTree = "<group>"; };
+		4E6BC35B30B65869007527AF /* Stadium Stampede 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stadium Stampede 3.mp3"; sourceTree = "<group>"; };
+		4E6BC35C30B65869007527AF /* Throne In The Chaos.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Throne In The Chaos.wav"; sourceTree = "<group>"; };
+		4E6BC35D30B65869007527AF /* Trap Cypher Banger.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Trap Cypher Banger.wav"; sourceTree = "<group>"; };
+		4E6BC35E30B65869007527AF /* Trap Cypher Banger 2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Trap Cypher Banger 2.wav"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4E6BC31B30B65822007527AF /* RMC13 Tools */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RMC13 Tools";
+			sourceTree = "<group>";
+		};
+		4E6BC32C30B6582B007527AF /* RMC13 ToolsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RMC13 ToolsTests";
+			sourceTree = "<group>";
+		};
+		4E6BC33630B6582C007527AF /* RMC13 ToolsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "RMC13 ToolsUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E6BC31630B65822007527AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC32630B6582B007527AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC33030B6582C007527AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E6BC31030B65822007527AF = {
+			isa = PBXGroup;
+			children = (
+				4E6BC35F30B65869007527AF /* Rmc news beats */,
+				4E6BC31B30B65822007527AF /* RMC13 Tools */,
+				4E6BC32C30B6582B007527AF /* RMC13 ToolsTests */,
+				4E6BC33630B6582C007527AF /* RMC13 ToolsUITests */,
+				4E6BC31A30B65822007527AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E6BC31A30B65822007527AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E6BC31930B65822007527AF /* RMC13 Tools.app */,
+				4E6BC32930B6582B007527AF /* RMC13 ToolsTests.xctest */,
+				4E6BC33330B6582C007527AF /* RMC13 ToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E6BC35F30B65869007527AF /* Rmc news beats */ = {
+			isa = PBXGroup;
+			children = (
+				4E6BC34630B65869007527AF /* Back Door Cipher.wav */,
+				4E6BC34730B65869007527AF /* Block Ring Cypher 2.wav */,
+				4E6BC34830B65869007527AF /* Breakneck Halo 2.mp3 */,
+				4E6BC34930B65869007527AF /* Breakneck Halo 3.mp3 */,
+				4E6BC34A30B65869007527AF /* Clock Hands to the Floor.mp3 */,
+				4E6BC34B30B65869007527AF /* Clock Hands to the Floor 2.mp3 */,
+				4E6BC34C30B65869007527AF /* Cold Night Come-Up.mp3 */,
+				4E6BC34D30B65869007527AF /* Cold Night Come-Up 2.mp3 */,
+				4E6BC34E30B65869007527AF /* Desert Freeway Bhangra.mp3 */,
+				4E6BC34F30B65869007527AF /* High Class Highlight.mp3 */,
+				4E6BC35030B65869007527AF /* High Level Trap Run.wav */,
+				4E6BC35130B65869007527AF /* High-Rise Flex.mp3 */,
+				4E6BC35230B65869007527AF /* Late Night Cypher.wav */,
+				4E6BC35330B65869007527AF /* Midnight Cypher Chase.mp3 */,
+				4E6BC35430B65869007527AF /* Midnight Cypher Chase 2.mp3 */,
+				4E6BC35530B65869007527AF /* Midnight Sprint.mp3 */,
+				4E6BC35630B65869007527AF /* Midnight Sprint 2.mp3 */,
+				4E6BC35730B65869007527AF /* Next Level Voltage.wav */,
+				4E6BC35830B65869007527AF /* Night Count.wav */,
+				4E6BC35930B65869007527AF /* Run It Like Money.mp3 */,
+				4E6BC35A30B65869007527AF /* Run It Up Again 3.mp3 */,
+				4E6BC35B30B65869007527AF /* Stadium Stampede 3.mp3 */,
+				4E6BC35C30B65869007527AF /* Throne In The Chaos.wav */,
+				4E6BC35D30B65869007527AF /* Trap Cypher Banger.wav */,
+				4E6BC35E30B65869007527AF /* Trap Cypher Banger 2.wav */,
+			);
+			path = "Rmc news beats";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E6BC31830B65822007527AF /* RMC13 Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6BC33D30B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 Tools" */;
+			buildPhases = (
+				4E6BC31530B65822007527AF /* Sources */,
+				4E6BC31630B65822007527AF /* Frameworks */,
+				4E6BC31730B65822007527AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4E6BC31B30B65822007527AF /* RMC13 Tools */,
+			);
+			name = "RMC13 Tools";
+			packageProductDependencies = (
+			);
+			productName = "RMC13 Tools";
+			productReference = 4E6BC31930B65822007527AF /* RMC13 Tools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E6BC32830B6582B007527AF /* RMC13 ToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6BC34030B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 ToolsTests" */;
+			buildPhases = (
+				4E6BC32530B6582B007527AF /* Sources */,
+				4E6BC32630B6582B007527AF /* Frameworks */,
+				4E6BC32730B6582B007527AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E6BC32B30B6582B007527AF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E6BC32C30B6582B007527AF /* RMC13 ToolsTests */,
+			);
+			name = "RMC13 ToolsTests";
+			packageProductDependencies = (
+			);
+			productName = "RMC13 ToolsTests";
+			productReference = 4E6BC32930B6582B007527AF /* RMC13 ToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E6BC33230B6582C007527AF /* RMC13 ToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E6BC34330B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 ToolsUITests" */;
+			buildPhases = (
+				4E6BC32F30B6582C007527AF /* Sources */,
+				4E6BC33030B6582C007527AF /* Frameworks */,
+				4E6BC33130B6582C007527AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E6BC33530B6582C007527AF /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4E6BC33630B6582C007527AF /* RMC13 ToolsUITests */,
+			);
+			name = "RMC13 ToolsUITests";
+			packageProductDependencies = (
+			);
+			productName = "RMC13 ToolsUITests";
+			productReference = 4E6BC33330B6582C007527AF /* RMC13 ToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E6BC31130B65822007527AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4E6BC31830B65822007527AF = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4E6BC32830B6582B007527AF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4E6BC31830B65822007527AF;
+					};
+					4E6BC33230B6582C007527AF = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4E6BC31830B65822007527AF;
+					};
+				};
+			};
+			buildConfigurationList = 4E6BC31430B65822007527AF /* Build configuration list for PBXProject "RMC13 Tools" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E6BC31030B65822007527AF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4E6BC31A30B65822007527AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E6BC31830B65822007527AF /* RMC13 Tools */,
+				4E6BC32830B6582B007527AF /* RMC13 ToolsTests */,
+				4E6BC33230B6582C007527AF /* RMC13 ToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E6BC31730B65822007527AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E6BC36030B65869007527AF /* Trap Cypher Banger 2.wav in Resources */,
+				4E6BC36130B65869007527AF /* Throne In The Chaos.wav in Resources */,
+				4E6BC36230B65869007527AF /* Cold Night Come-Up 2.mp3 in Resources */,
+				4E6BC36330B65869007527AF /* Back Door Cipher.wav in Resources */,
+				4E6BC36430B65869007527AF /* High Class Highlight.mp3 in Resources */,
+				4E6BC36530B65869007527AF /* Trap Cypher Banger.wav in Resources */,
+				4E6BC36630B65869007527AF /* Night Count.wav in Resources */,
+				4E6BC36730B65869007527AF /* High Level Trap Run.wav in Resources */,
+				4E6BC36830B65869007527AF /* Clock Hands to the Floor.mp3 in Resources */,
+				4E6BC36930B65869007527AF /* Midnight Cypher Chase 2.mp3 in Resources */,
+				4E6BC36A30B65869007527AF /* Breakneck Halo 2.mp3 in Resources */,
+				4E6BC36B30B65869007527AF /* Breakneck Halo 3.mp3 in Resources */,
+				4E6BC36C30B65869007527AF /* Midnight Cypher Chase.mp3 in Resources */,
+				4E6BC36D30B65869007527AF /* Desert Freeway Bhangra.mp3 in Resources */,
+				4E6BC36E30B65869007527AF /* Run It Like Money.mp3 in Resources */,
+				4E6BC36F30B65869007527AF /* Cold Night Come-Up.mp3 in Resources */,
+				4E6BC37030B65869007527AF /* Clock Hands to the Floor 2.mp3 in Resources */,
+				4E6BC37130B65869007527AF /* Next Level Voltage.wav in Resources */,
+				4E6BC37230B65869007527AF /* Midnight Sprint 2.mp3 in Resources */,
+				4E6BC37330B65869007527AF /* Run It Up Again 3.mp3 in Resources */,
+				4E6BC37430B65869007527AF /* Stadium Stampede 3.mp3 in Resources */,
+				4E6BC37530B65869007527AF /* Block Ring Cypher 2.wav in Resources */,
+				4E6BC37630B65869007527AF /* Midnight Sprint.mp3 in Resources */,
+				4E6BC37730B65869007527AF /* High-Rise Flex.mp3 in Resources */,
+				4E6BC37830B65869007527AF /* Late Night Cypher.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC32730B6582B007527AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC33130B6582C007527AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E6BC31530B65822007527AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC32530B6582B007527AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E6BC32F30B6582C007527AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E6BC32B30B6582B007527AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E6BC31830B65822007527AF /* RMC13 Tools */;
+			targetProxy = 4E6BC32A30B6582B007527AF /* PBXContainerItemProxy */;
+		};
+		4E6BC33530B6582C007527AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E6BC31830B65822007527AF /* RMC13 Tools */;
+			targetProxy = 4E6BC33430B6582C007527AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4E6BC33B30B6582C007527AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4E6BC33C30B6582C007527AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E6BC33E30B6582C007527AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RMC13 Tools/Preview Content\"";
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "RMC13 Tools can save downloaded cover art when you share it to Photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RMC13 Tools uses your photo library for press photos and your artist profile picture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E6BC33F30B6582C007527AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RMC13 Tools/Preview Content\"";
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "RMC13 Tools can save downloaded cover art when you share it to Photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "RMC13 Tools uses your photo library for press photos and your artist profile picture.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E6BC34130B6582C007527AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RMC13 Tools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RMC13 Tools";
+			};
+			name = Debug;
+		};
+		4E6BC34230B6582C007527AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-ToolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RMC13 Tools.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/RMC13 Tools";
+			};
+			name = Release;
+		};
+		4E6BC34430B6582C007527AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-ToolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RMC13 Tools";
+			};
+			name = Debug;
+		};
+		4E6BC34530B6582C007527AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 374LRP6YMJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "RMC13Globalproductions.RMC13-ToolsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RMC13 Tools";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E6BC31430B65822007527AF /* Build configuration list for PBXProject "RMC13 Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6BC33B30B6582C007527AF /* Debug */,
+				4E6BC33C30B6582C007527AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E6BC33D30B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6BC33E30B6582C007527AF /* Debug */,
+				4E6BC33F30B6582C007527AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E6BC34030B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 ToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6BC34130B6582C007527AF /* Debug */,
+				4E6BC34230B6582C007527AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E6BC34330B6582C007527AF /* Build configuration list for PBXNativeTarget "RMC13 ToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E6BC34430B6582C007527AF /* Debug */,
+				4E6BC34530B6582C007527AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E6BC31130B65822007527AF /* Project object */;
+}
